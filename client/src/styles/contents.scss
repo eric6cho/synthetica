@@ -1,0 +1,69 @@
+@import "mixins/mixins.scss";
+
+.contents{
+  min-height:120vh;
+  height: 120vh;
+  width:100%;
+  
+  background: rgb(235, 235, 235);
+  display: flex;
+
+
+  .article-section{
+    width:600px;
+    height:800px;
+    //border: 1px solid black;
+    
+    margin:auto;
+
+
+
+
+    h3{
+      font-size: 24px;
+      font-weight: 300;
+      margin-bottom: 150px;
+      font-family: GLoock, serif;
+      text-align: center;
+    }
+
+
+
+    .content-section{
+      width:100%;
+      display:flex;
+      margin-bottom: 50px;
+
+
+
+      h4{
+        width: 150px;
+        margin:0 30px;
+        font-family: GLoock, serif;
+      }
+
+      .content-list{
+        p{
+          margin-bottom:30px;
+          font-family: GLoock, serif;
+          display: flex;
+
+          .chapter-number{
+            width:50px;
+            font-family: GLoock, serif;
+          }
+        }
+      }
+    }
+
+
+
+  }
+
+
+  
+
+
+
+
+}

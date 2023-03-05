@@ -1,0 +1,47 @@
+@import "mixins/mixins.scss";
+
+.nav{
+
+
+
+
+
+  width: calc(100vh - 20px);
+  height: 30px;
+  transform-origin: top left;
+  position: fixed;
+  left: 10px;
+  top: calc(100% - 10px);
+  transform: rotate(-90deg);
+  background: rgb(235,235,235);
+
+  display: flex;
+  
+  align-items: center;
+  flex-direction: row-reverse;
+
+
+  z-index: 100;
+
+  .title{
+    margin: 0 20px 0 auto;
+
+    h3{
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      font-family: GLoock, serif;
+    }
+  }
+
+
+  h4{
+    margin-bottom:-2px;
+    height:30px;
+    width: 60px;
+    font-size: 12px;
+    line-height: 30px;;
+    font-weight: 600;
+    text-align: center;
+  }
+}

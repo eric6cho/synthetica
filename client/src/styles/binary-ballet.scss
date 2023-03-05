@@ -1,0 +1,225 @@
+@import "mixins/mixins.scss";
+
+.binary-ballet{
+  height:150vh;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(235, 197, 158);
+  
+
+
+  .main-image-container{
+    @include transition();
+    overflow: hidden;
+    height: 100%;
+    min-width: 100%; 
+    position: relative;
+    
+    
+
+
+    img{
+      background: rgb(30,30,30);
+      position: absolute;
+      height: 102%;
+      width: 102%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+    
+    .main-image-overlay{
+      @include transition();
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      
+      background: rgba(50, 75, 40, 0.15);
+      display: flex;
+      align-items: center;
+    }
+
+
+  }
+
+
+  .image-container-outer{
+    height: 100%;
+    min-width: 600px; 
+
+    background: rgb(235, 197, 158);
+    padding: 500px 100px 600px;
+
+
+
+    position: relative;
+
+      .title{
+        width:1500px;
+        position: absolute;
+        font-size: 150px;
+        text-transform: uppercase;
+        color: rgba(41, 255, 173, 0.7);
+        top:1100px;
+        left:-330px;
+        transform: rotate(90deg);
+        z-index: 10;
+        font-family: GLoock, serif;
+
+      }
+
+
+    .image-container{
+      @include transition();
+      overflow: hidden;
+      height: 800px;
+      width: 100%; 
+      position: relative;
+      border-radius: 6px;
+      
+
+
+      img{
+        background: rgb(30,30,30);
+        position: absolute;
+        height: 102%;
+        width: 102%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+      
+      .image-overlay{
+        @include transition();
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 2;
+        background: rgba(0,0,0,0.2);
+
+        
+      }
+
+
+    }
+
+    .subtitle{
+      width: 400px;
+      
+      
+      margin: 50px 0;
+      letter-spacing: 5px;
+      word-spacing: 10px;
+      line-height: 25px;
+
+    }
+
+
+    
+  }
+
+
+  .poem-container{
+   
+    height: 100%;
+    width: 100%;
+
+    .english-section{
+      margin-left:50px;
+      padding:100px 200px 70px 100px;
+      background:   rgb(70, 160, 123);
+      border-radius: 6px;
+      
+      
+      h4{
+        margin-bottom: 20px;
+        font-family: Montserrat, sans-serif;
+      
+        
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+         color:black;
+
+          
+      }
+      
+      p{
+        margin-bottom: 20px;
+        font-family: Montserrat, sans-serif;
+      
+        
+        color: white;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 100;
+        letter-spacing: 5px;
+        word-spacing: 5px;
+
+        
+      }
+
+    }
+
+    .binary-section{
+      
+      
+      margin-left: auto;
+      margin-right: 100px;
+
+      p{
+        background:  rgb(235, 197, 158);
+        padding:50px 35px 50px 50px;
+        width: 380px;
+        margin:20px;
+        font-size: 10px;
+        
+        letter-spacing: 5px;
+        word-spacing: 10px;
+        line-height: 20px;
+      border-radius: 6px;
+      }
+
+
+        
+    }
+    
+        
+    .dot-section{
+      
+      margin-top: 50px;
+      
+      
+      .dot-row{
+        margin-bottom:30px;
+        display: flex;
+
+        .dot{
+          width: 3px;
+          height:3px;
+          background:  white;
+          
+          margin-right: 30px;
+
+
+          &.black{
+            background:  black;
+
+          }
+          
+
+        }
+      }
+  
+    }
+    
+    
+  }
+}
