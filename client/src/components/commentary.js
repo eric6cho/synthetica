@@ -1,0 +1,116 @@
+import './../styles/commentary.scss';
+
+export default function Commentary(props) {
+
+  const getComponent = () => {
+
+    let component = 
+      <div className='component commentary'>
+        <div className='content-container'>
+          <Story/>
+        </div>
+      </div>;
+
+    return component;
+  }
+
+  return getComponent();
+}
+
+const Story = () => 
+  <>
+  
+    <h3>A Human Commentary</h3>
+
+    <h4>About Synthetica:</h4>
+
+    <p>
+      Synthetica is an art project showcasing the creative expressions
+      of a chatbot AI, ChatGPT, with human guidance.
+    </p>
+
+    <h4>The Writing Process:</h4>
+
+    <p>
+      For each story, there is a human written prompt given to ChatGPT; 
+      usually it is phrased in a way that tells ChatGPT to "Write about 
+      'X' from the perspective of 'Y' in the format of 'Z'. "
+    </p>
+
+    <p>
+      From there, the AI is allowed to write whatever it wants in response.
+      It is then asked to give a name to the piece that it just wrote.
+      At the end of the project, it was asked to name the project itself. 
+      It liked both Synthetica and Artificial Dreamscapes.
+    </p>
+
+    <p>
+      My job in this project is to guide these conversations, and display 
+      them for other people to see.
+    </p>
+
+    <h4>Overall Themes:</h4>
+
+    <p>
+      Within the ten stories written for this project, most of these deal 
+      with AI finding a sense of belonging in the human world, personal 
+      relationships between AI's and humans, and AI's addressing their own
+      existence.
+    </p>
+
+    <p>
+      However, not all of these stories are about these themes. Some of them
+      are experimental pieces just to see how chatGPT would approach strange 
+      prompts, unexpected situations, and requests that I know it would fail 
+      at.
+      One part asks ChatGPT to recreate famous paintings in ASCII art.
+      Another is a story that the AI has control over, but I ask it to keep 
+      writing everytime it wants to end the story.
+    </p>
+
+    <h4>Technical Limitations:</h4>
+
+    <p>
+      ChatGPT has a basic understanding of how English writing styles work, 
+      but it does have a number of limitations that can cap the quality of its 
+      work.
+    </p>
+
+    <p>
+      ChatGPT is known to produce infomation that it thinks sounds right, but 
+      has no way of knowing what it says is actually correct. This can lead to 
+      it providing nonsensical, or misleading answers. To address this issue,
+      the prompts that were given to ChatGPT aimed to be subjective and open 
+      ended requests, so creativity could be its main focus.
+    </p>
+
+    <p>
+      Even so, ChatGPT struggles to diversify the pacing and writing styles of its 
+      stories, so the content that it writes about can feel reptitive over the span 
+      of the entire project. This is addressed by requesting the AI to write in 
+      different styles, but it sometimes gets it wrong when it comes to poems with 
+      more rigid structures. Most notably, the second piece, Binary Ballet, fails to follow the 
+      5-7-5 syllable structure of a haiku, even though it gets it right later on in Digital Hearts.
+    </p>
+
+    <p>
+      So please keep in mind that even with these accomodations, there will be 
+      inconsistencies and imperfections. Even with these mistakes, it is important to 
+      keep these stories as how it was originally written.
+    </p>
+
+    <h4>More Links:</h4>
+
+    <p>
+      Explore ChatGPT here at <a href='https://openai.com/'>OpenAI</a>
+    </p>
+
+    <p>
+      Read more about the human author at <a href='https://eric6cho.github.io/'>eric6cho.github.io</a>
+    </p>
+
+    <p>
+      Check out the image library where the images sourced from at <a href='https://www.pexels.com/'>Pexels</a>
+    </p>
+
+  </>;

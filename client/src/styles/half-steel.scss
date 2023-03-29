@@ -1,224 +1,221 @@
 @import "mixins/mixins.scss";
 
 .half-steel{
-  min-height:200vh;
-  height: 200vh;
-  width:100%;
-  
-  
-  background: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(30,30,30,1) 100%);
-  display: flex;
-  padding: 0 150px 0;
-  align-items: center;
-  
-
-
-  .image-container-outer{
-    padding: 50px 50px;
-    border: 10px solid white;
-    
-    border-right: 10px solid rgb(255, 56, 106);
-    border-bottom: 10px solid rgb(255, 56, 106);
-    width:600px;
-    min-width:600px;
-    height:600px;
-    display: flex;
-    margin: auto 0 auto 100px;
-
-  }
-  
-  .image-container{
-    @include transition();
-    overflow: hidden;
-    height: 100%;
-    width: 100%; 
-    
+  &.component{
     position: relative;
-    margin-right:0px;
-    
+    width:100%;
+    background: linear-gradient(0deg, rgba(10,10,10,1) 0%, rgba(30,30,30,1) 100%);
 
-
-    img{
-      background: rgb(30,30,30);
+    .id-marker{
       position: absolute;
-      height: 102%;
-      width: 102%;
-      left: 50%;
-      top: 70%;
-      transform: translate(-50%, -70%);
-      object-fit: cover;
+      top:150px;
     }
-    
-    .image-overlay{
-      @include transition();
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 2;
-      
-      background: rgba(4, 0, 255, 0.2);
+
+    .article-container{
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      padding: 0 10px 0;
       align-items: center;
-
-
-      
-      
-      
+      justify-content: center;
     }
 
-
-  }
-
-  
-
-  .dot-section{
-    display:flex;
-    flex-direction: column;
-    height:480px;
+    .image-container{
+      padding: 5vw;
+      border: 10px solid white;
+      border-right: 10px solid rgb(255, 56, 106);
+      border-bottom: 10px solid rgb(255, 56, 106);
+      width:90vw;
+      min-width:90vw;
+      height:90vw;
+      display: flex;
+      margin: 5vw auto 0;
+    }
     
-    padding: 20px;
-    margin-right: auto;
-
-
-    .dot,.line{
-      min-height:10px;
-      width:10px;
-      height:10px;
-      background: rgb(235,235,235);
-      margin-bottom:20px;
-
-      &.accent{
-        background:rgb(255, 56, 106);
-
+    .image{
+      .image-overlay{
+        background: rgba(4, 0, 255, 0.2);
       }
     }
 
-    .line{
-      height:100%;
-      
+    .dot-section{
+      display:flex;
+      flex-direction: column;
+      height:480px;
+      padding: 20px;
+      margin-right: auto;
 
-      &.sm{
-        height: 100px;
+      .dot,.line{
+        min-height:10px;
+        width:10px;
+        height:10px;
+        background: rgb(235,235,235);
+        margin-bottom:20px;
+
+        &.accent{
+          background:rgb(255, 56, 106);
+        }
+      }
+
+      .line{
+        height:100%;
         
+        &.sm{
+          height: 100px;
+        }
       }
     }
-  }
 
-
-  
-
-  .title-section{
-    position: relative;
-
-
-    .title{
-      font-size:150px;
-      line-height: 100px;
-      letter-spacing: 1px;
-      word-spacing: 5px;
-      font-weight: 900;
-      text-transform: uppercase;
-      color:white;
-      margin-top:100px;
-      text-align: right;
-      position: absolute;
-      right:0;
-      top:0;
-      width:1000px;
+    .title-section{
+      width:100%;
+      display:flex;
+      padding-left:20px;
+      
+      .title{
+        font-size:30px;
+        letter-spacing: 30px;
+        line-height: 100px;
+        word-spacing: 5px;
+        font-weight: 900;
+        text-transform: uppercase;
+        text-align: center;
+        color:white;
+        margin:100px auto 400px;
+      }
     }
-  }
 
-
-
-  .right-section{
-    width: 100%;
-    height:100%;
-
-
-  }
-
- 
-  
-
-  .story-container{
-    
-    width: 100%;
-    
-    //top:100px;
-
-    padding-top:50vh;
-    
-    
-
-
-    border: 10px solid rgb(235,235,235);
-    border-top: 0;
-
-
-      display: flex;
-      
-      justify-content: center;
-      align-items: center;
-
-
-    .story-section{
-      
-      width: 100%;
-      height: 100%;
-      
-      
+    .story-container{
+      width: 90vw;
+      padding-top:300px;
+      border: 10px solid rgb(235,235,235);
+      border-top: 0;
       display: flex;
       justify-content: center;
       align-items: center;
-flex-direction: column;
+      flex-direction: column;
 
+      .p-group{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         p{
           width:100%;
           font-size: 12px;
           line-height: 20px;
-          padding: 50px;
+          padding: 40px;
           text-align: right;
           color: white;
-          
-
-         &.last{
-          color: black;
-          background:rgb(235,235,235);
-         }
-          
+        
+          &.last{
+            color: black;
+            background:rgb(235,235,235);
+          }
         }
 
-
-
         h4{
-          
           width:100%;
           font-size: 30px;
           line-height: 20px;
-          padding: 100px 100px 50px;
+          padding: 50px 100px 50px;
           text-align: right;
           color: white;
-          
         }
-        
-        
         
         &.left{
-      
-
-          p{
-            text-align: left;
-          }
-
-          h4{
+          p,h4{
             text-align: left;
           }
         }
-
+      }
     }
+  }
+}
+  
+@include media-md{
+  
+  .half-steel{
+    &.component{
+        
+      .id-marker{
+        top:250px;
+      }
+
+      .image-container{
+        padding: 50px;
+        width:700px;
+        min-width:700px;
+        height:700px;
+        margin: 100px auto 0;
+      }
+      
+      .dot-section{
+        height:550px;
+      }
+
+      .title-section{
+        .title{
+          margin: 100px auto 500px;
+          padding-left:30px;
+          font-size:50px;
+          letter-spacing: 40px;
+        }
+      }
+  
+      .story-container{
+        min-width: 700px;
+        width: 700px;
+        padding-top:300px;
+        flex-direction: row;
+      }
+    }
+  }
+}
+
+@include media-xl{
     
+  .half-steel{
+    &.component{
     
+      .id-marker{
+        top:350px;
+      }
+
+      .article-container{
+        flex-direction: row;
+      }
+      
+      .image-container{
+        padding: 20px;
+        width:500px;
+        min-width:500px;
+        height:500px;
+        margin: auto 0 -330px 20px;
+      }
+      
+      .dot-section{
+        height:430px;
+      }
+
+      .title-section{
+        padding:0;
+        .title{
+          position: relative;
+          margin: 800px auto 1000px;
+          padding-left: 40px;
+          font-size:80px;
+          letter-spacing: 60px;
+
+        }
+      }
+
+      .story-container{
+        min-width: 600px;
+        width: 600px;
+        padding-top:500px;
+      }
+    }
   }
 }

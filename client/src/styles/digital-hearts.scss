@@ -1,158 +1,180 @@
 @import "mixins/mixins.scss";
 
 .digital-hearts{
-  height:180vh;
-  width:100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(199, 36, 30);
-
-  .image-container{
+  &.component{
     @include transition();
-    overflow: hidden;
-    height: 100%;
-    width: 50%; 
-    position: relative;
-
-    img{
-      background: rgb(30,30,30);
-      position: absolute;
-      height: 102%;
-      width: 102%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-    
-    .image-overlay{
-      @include transition();
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 2;
-      background: rgba(0,0,0,0.2);
-    }
-  }
-
-  .poem-container{
-    width: 50%;
-    display: flex;
+    min-height:2000px;
+    height:180vh;
+    width:100%;
+    display:flex;
     justify-content: center;
     align-items: center;
-    .grid{
-      
-      width:580px;
-      
+    position: relative;
+    background: rgb(199, 36, 30);
+    
 
+    .image-container{
+      @include transition();
+      height: 100%;
+      width: 100%; 
+    }
 
-      .square{
-        display: inline-flex;
-        vertical-align: top;
-        margin: 20px;
-        width: 250px;
-        height:250px;
-        padding: 20px;
-        border-radius: 50%;
+    .poem-container{
+      @include transition();
+      position: absolute;
+      width:100%;
+      height:100%;
+      z-index: 10;
+
+      background: rgba(129, 36, 30,0.7);
+      width: 100%;
+      //min-width: 768px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .grid{
         
-        align-items: center;
-        overflow: hidden;
+        width:270px;
+        
 
 
-
-              
-        .image-container{
+        .circle{
+          display: inline-flex;
+          vertical-align: top;
+          margin: 20px;
+          width: 230px;
+          height:230px;
+          padding: 20px;
+          border-radius: 50%;
           
-          height: 120%;
-          width: 120%; 
-          margin:-10%;
-
-          .image-overlay{
-          
-            background: rgba(0,0,0,0.2);
-          }
-        }
-
-        .text-section{
-          text-align: center;
-          width: 100%;
-          p{
-            font-size: 11px;
-            line-height: 20px;
-            letter-spacing: 1px;
-            font-weight: 600;
-          }
-        }
-
-        .title-section{
-          border: 1px solid rgb(255, 67, 92);
-          height:60px;
-          width: 100%;
-          margin:0 10px;
-          
-          display: flex;
-          flex-direction: column;
           align-items: center;
-          justify-content: center;
-
-          h3{
-            font-size: 13px;
-            margin: 10px;
-          }
-
-          .secondary{
-            border-top: 1px solid rgb(255, 67, 92);
-            height:30px;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            padding: 0 5px;
+          overflow: hidden;
 
 
-            .dot{
-              min-width:2px;
-              height:2px;
-              margin-right:5px;
-              background: rgb(255, 67, 92);
 
-            }
+                
+          .image-container{
             
-            .line{
-              width:100%;
-              height:1px;
-              
-              background: rgb(255, 67, 92);
+            height: 120%;
+            width: 120%; 
+            margin:-10%;
 
+            .image-overlay{
+            
+              background: rgba(0,0,0,0.2);
             }
           }
 
-        }
+          .text-section{
+            text-align: center;
+            width: 100%;
+            p{
+              font-size: 11px;
+              line-height: 20px;
+              letter-spacing: 1px;
+              font-weight: 600;
+            }
+          }
+
+          .title-section{
+            border: 1px solid rgb(255, 67, 92);
+            height:60px;
+            width: 100%;
+            margin:0 10px;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            h3{
+              font-size: 13px;
+              margin: 10px;
+              font-weight: 600;
+            }
+
+            .secondary{
+              border-top: 1px solid rgb(255, 67, 92);
+              height:30px;
+              width: 100%;
+              display: flex;
+              align-items: center;
+              padding: 0 5px;
+
+
+              .dot{
+                min-width:2px;
+                height:2px;
+                margin-right:5px;
+                background: rgb(255, 67, 92);
+
+              }
+              
+              .line{
+                width:100%;
+                height:1px;
+                
+                background: rgb(255, 67, 92);
+
+              }
+            }
+
+          }
 
 
 
-        &.white{
-          background: rgb(225,225,225);
-          color:black;
+          &.white{
+            background: rgb(225,225,225);
+            color:black;
 
-        }
+          }
 
-        &.black{
+          &.black{
+            
+            background: rgb(30,30,30);
+            color:white;
+          }
+
           
-          background: rgb(30,30,30);
-          color:white;
-        }
+          &.blue{
+            
+            background: rgb(9, 53, 173);
+            
+            color: rgb(255, 98, 119);
 
-        
-        &.blue{
-          
-          background: rgb(9, 53, 173);
-          
-          color: rgb(255, 67, 92);
+          }
         }
       }
     }
+    
+
+  }
+}
+
+
+  
+@include media-md{
+
+  .digital-hearts{
+    &.component{
+   
+      .poem-container{
+        position: relative;
+        z-index: auto;
+        background: none;
+        min-width: 768px;
+        .grid{
+          
+          width:540px;
+          
+          
+        }
+      }
+      
+  
+    }
   }
   
-
+    
 }
+

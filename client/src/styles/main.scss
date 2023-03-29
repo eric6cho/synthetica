@@ -5,23 +5,46 @@
   position: relative;
   height:100%;
   
-      
-  // mobile styling (x<768px)
-  .content{
+  .image{
+    @include transition();
+    position: relative;
+    overflow: hidden;
+    height:100%;
+    width: 100%;
 
-  }
-
-  // small desktop styling (768px<x<1200px)
-  @include media-md{
-    .content{
-      
+    img{
+      background: rgb(30,30,30);
+      position: absolute;
+      height: 102%;
+      width: 102%;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      object-fit: cover;
+    }
+    
+    .image-overlay{
+      @include transition();
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 2;
+      background: rgba(255, 219, 120, 0);
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
-  // large desktop styling (x>1200px)
-  @include media-xl{
-    .content{
-      
-    } 
-  }
+
+}
+
+
+  
+@include media-md{
+  
+}
+
+@include media-xl{
+  
 }

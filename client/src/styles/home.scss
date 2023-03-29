@@ -1,104 +1,79 @@
 @import "mixins/mixins.scss";
 
 .home{
-
-  height:100vh;
-  width:100%;
-  background: rgb(235,235,235);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-
-
-  .top-section{
-    width:100%;
-    height:50vh;
-    background: rgb(235, 235, 235);
-    position: relative;
-    display: flex;
-  }
-
-
+  &.component{
+    min-height:100vh;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    padding:0;
     
-  .image-container{
-    @include transition();
-    overflow: hidden;
-    height: 100%;
-    min-width: 100%; 
-    position: relative;
-    
-
-
-    img{
-      background: rgb(30,30,30);
-      position: absolute;
-      height: 102%;
-      width: 102%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-    
-    .image-overlay{
+    .title-section{
       @include transition();
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 2;
-      background: rgba(0, 0, 0, 0.4);
+      width:100%;
+      height:500px;
+      position: relative;
       display: flex;
       flex-direction: column;
+      align-items: end;
       justify-content: center;
-      align-items: center;
+      padding: 0 50px;
 
-      
+      .title{
+        @include transition();
+        font-size: 30px;
+        letter-spacing: 3px;
+        color:rgb(10,10,10);
+        font-family: GLoock, serif;
+        margin-bottom: 20px;   
+      }
 
-
-      
+      .subtitle{
+        @include transition();
+        font-size: 14px;
+        letter-spacing: 1px;
+        color:rgb(10,10,10);
+        text-align:right;
+      }
     }
 
-
+    .image{
+      .image-overlay{
+        background: rgba(0, 0, 0, 0.4); 
+      }
+    }
   }
+}
 
+@include media-md{ //>768px
+
+  .home{
+    &.component{
+       
+      .title-section{  
+        padding: 0 100px;
   
-
-  .title{
-    width: 100%;
-    display: flex;
-    height: 50px;
-    
-
-    margin:auto ;
-    flex-direction: column;
-    align-items: end;
-    padding:0 300px;
-
-    h3{
-      font-size: 40px;
-      letter-spacing: 3px;
-      
-      color:rgb(10,10,10);
-
-       font-family: GLoock, serif;
-        
-        margin-bottom: 30px;
-      
-
-        
-    }
-
-    h4{
-      font-size: 14px;
-      letter-spacing: 1px;
-      
-      color:rgb(10,10,10);
-
+        .title{
+          font-size: 40px;
+          margin-bottom: 30px;   
+        }  
+      }
     }
   }
+}
 
+@include media-xxl{ //>1400px
+    
+  .home{
+    &.component{
 
+      .title-section{
+        padding: 0 200px;
 
+        .title{
+          font-size: 50px;
+        }
+      }
+    }
+  }
 }

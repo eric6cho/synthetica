@@ -1,68 +1,64 @@
 @import "mixins/mixins.scss";
 
-.contents{
+.commentary{
   &.component{
-    min-height:1400px;
-    height: 1400px;
-    padding:0;
+    min-height: auto;
+    height: auto;
+    padding:200px 30px;
+    
     
     .content-container{
       @include transition();
-      width:calc(100% - 60px);
-      max-width: 220px;
-      height:800px;
+      //width:calc(100% - 60px);
+      //max-width: 220px;
+      
+      
+      //height:800px;
       margin:auto;
 
       h3{
         @include transition();
         font-size: 24px;
         font-weight: 300;
-        margin-bottom: 150px;
+        margin-bottom: 90px;
         font-family: GLoock, serif;
         text-align: center;
       }
 
-      .content-section{
-        @include transition();
-        width:100%;
-        display:flex;
-        flex-direction: column;
-        margin-bottom: 50px;
-
+      
         h4{
           @include transition();
-          width: 100px;
+        
           font-size: 16px;
           font-family: GLoock, serif;
+          letter-spacing: 2px;
+          font-weight: 600;
+          margin-top: 60px;
           margin-bottom: 30px;
         }
 
-        .content-list{
-          @include transition();
-
+        
           p{
             @include transition();
             margin-bottom:30px;
-            display: flex;
-
-            .chapter-number{
-              @include transition();
-              width:30px;
-              font-weight: 600;
-              text-align: right;
-              margin-right: 20px;
-            }
+            line-height: 20px;
+            font-size: 13px;
+            
           }
-        }
-      }
+      
+          
     }
   }
 }
 
 
 @include media-md{ //>768px
-  .contents{
+  .commentary{
     &.component{
+      //min-height:120vh;
+      //height: 120vh;
+      
+    padding:200px 50px;
       
       .content-container{
         width:500px;
@@ -72,14 +68,16 @@
           font-size: 24px;
         }
   
-        .content-section{
-          flex-direction: row;
-
           h4{
-            width: 150px;
             font-size: 18px; 
           }
-        }
+        
+        
+          p{
+            text-align: justify;
+            
+          }
+      
       }
     }
   }
@@ -87,20 +85,21 @@
 
 @include media-xxl{ //>1400px
 
-  .contents{
+  .commentary{
     &.component{
+      
+    padding:200px;
       
       .content-container{  
         h3{
           font-size: 30px;
+          font-weight: 600;
         }
-        
-        .content-section{
-
+   
           h4{
             font-size: 20px; 
           }
-        }
+        
       }
     }
   }
