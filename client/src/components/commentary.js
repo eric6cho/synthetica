@@ -1,12 +1,12 @@
-import './../styles/commentary.scss';
+import './../styles/text-page.scss';
 
 export default function Commentary(props) {
 
   const getComponent = () => {
 
     let component = 
-      <div className='component commentary'>
-        <div className='content-container'>
+      <div className='component text-page'>
+        <div className='section'>
           <Story/>
         </div>
       </div>;
@@ -20,13 +20,32 @@ export default function Commentary(props) {
 const Story = () => 
   <>
   
-    <h3>A Human Commentary</h3>
+    <h3>A Human Word: Commentary</h3>
 
     <h4>About Synthetica:</h4>
 
     <p>
       Synthetica is an art project showcasing the creative expressions
-      of a chatbot AI, ChatGPT, with human guidance.
+      of an AI, ChatGPT, with human guidance.
+    </p>
+
+    
+    <h4>Overall Themes:</h4>
+
+    <p>
+      Within the ten stories written for this project, most of these deal 
+      with AI navigating and finding a sense of belonging in the human world, personal 
+      relationships between AI's and humans, and AI's addressing their own
+      existence.
+    </p>
+
+    <p>
+      However, not all of these stories are about these themes. Some of them
+      are experimental pieces just to see how chatGPT would approach strange 
+      prompts, unexpected situations, and requests that it would struggle with.
+      One part asks ChatGPT to recreate famous paintings in ASCII art.
+      Another is a story that the AI has control over, but I ask it to keep 
+      writing everytime it wants to end the story.
     </p>
 
     <h4>The Writing Process:</h4>
@@ -49,24 +68,6 @@ const Story = () =>
       them for other people to see.
     </p>
 
-    <h4>Overall Themes:</h4>
-
-    <p>
-      Within the ten stories written for this project, most of these deal 
-      with AI finding a sense of belonging in the human world, personal 
-      relationships between AI's and humans, and AI's addressing their own
-      existence.
-    </p>
-
-    <p>
-      However, not all of these stories are about these themes. Some of them
-      are experimental pieces just to see how chatGPT would approach strange 
-      prompts, unexpected situations, and requests that I know it would fail 
-      at.
-      One part asks ChatGPT to recreate famous paintings in ASCII art.
-      Another is a story that the AI has control over, but I ask it to keep 
-      writing everytime it wants to end the story.
-    </p>
 
     <h4>Technical Limitations:</h4>
 
@@ -94,10 +95,21 @@ const Story = () =>
     </p>
 
     <p>
+      Another interesting facet of ChatGPT can be seen in the ASCII Art Gallery. 
+      ChatGPT was asked to recreate historical paintings and then explain how these 
+      images were created. The AI was able to explain how image manipulation techniques
+      are used to analyze images and translate them into text. When asked if ChatGPT used
+      these techniques, it claimed that it did, even though the resulting image were widely 
+      unrelated to the original work. This shows the AI pretending to be able to do more than its capable of.
+    </p>
+
+    <p>
       So please keep in mind that even with these accomodations, there will be 
       inconsistencies and imperfections. Even with these mistakes, it is important to 
       keep these stories as how it was originally written.
     </p>
+
+
 
     <h4>More Links:</h4>
 

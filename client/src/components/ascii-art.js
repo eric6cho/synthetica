@@ -94,16 +94,12 @@ export default function ASCIIArt(props) {
           <div className="title-section">
             <h3>ASCII Art Gallery</h3>
 
-            <div className="graphic-section-outer"> 
-              <div className="graphic-section">
-                <div className="circle-section">
-
-                  <div className="circle c-1"></div>
-                  <div className="circle c-2"></div>
-                  <div className="circle c-3"></div>
-                  <div className="circle c-4"></div>
-
-                </div>
+            <div className="graphic-section">
+              <div className="circle-section">
+                <div className="circle c-1"></div>
+                <div className="circle c-2"></div>
+                <div className="circle c-3"></div>
+                <div className="circle c-4"></div>
               </div>
             </div>
     

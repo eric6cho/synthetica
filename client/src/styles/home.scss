@@ -22,7 +22,8 @@
       .title{
         @include transition();
         font-size: 30px;
-        letter-spacing: 3px;
+        font-weight: 600; 
+        letter-spacing: 2px;
         color:rgb(10,10,10);
         font-family: GLoock, serif;
         margin-bottom: 20px;   
