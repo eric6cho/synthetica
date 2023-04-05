@@ -9,6 +9,16 @@ export default function HalfSteel(props) {
 
         <div className='id-marker' id={props.name}></div>
 
+        <div className="main-image">
+          <div className="image">
+            <img src='images/pexels-min-an-713644.jpg' alt='article'/>
+            <div className="image-overlay">
+           
+
+            </div>
+          </div>   
+        </div>
+
         <div className="article-container">
           
           <div className='story-container'>

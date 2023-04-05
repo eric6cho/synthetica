@@ -40,6 +40,12 @@ export default function IAm(props) {
               </div>
               <div className="image-container">
                 <div className="image">
+                  <img src='images/pexels-maksim-goncharenok-4352151.jpg' alt='article'/>
+                  <div className="image-overlay"></div>
+                </div>
+              </div>
+              <div className="image-container">
+                <div className="image">
                   <img src='images/pexels-tuan-kiet-jr-13827311.jpg' alt='article'/>
                   <div className="image-overlay"></div>
                 </div>
@@ -56,7 +62,6 @@ export default function IAm(props) {
                   <div className="image-overlay"></div>
                 </div>
               </div>
-              <div className="image-container"></div>
             </div>
             
           </div>
