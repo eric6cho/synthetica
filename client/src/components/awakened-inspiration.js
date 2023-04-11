@@ -1,5 +1,7 @@
 import './../styles/awakened-inspiration.scss';
 
+import Emblem from "./emblem";
+
 export default function AwakenedInspiration(props) {
 
   const getComponent = () => {
@@ -20,14 +22,11 @@ export default function AwakenedInspiration(props) {
 
           <div className='title-section'>
 
-            <div className='dot-section'>
-              <div className="dot-row"> 
-                <div className="dot"></div>
-                <div className="dot"></div>
-                <div className="line"></div>
-                <div className="line sm"></div>
-              </div>
-            </div>
+              <Emblem name={props.name}/>
+              <div className="dot-lg"></div>
+              <div className="dot-lg"></div>
+              <div className="line-lg"></div>
+
 
             <h3 className='title'>Awakened Inspiration</h3> 
           </div>

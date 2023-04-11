@@ -1,4 +1,5 @@
 import './../styles/i-am.scss';
+import Emblem from './emblem';
 
 export default function IAm(props) {
 
@@ -24,23 +25,20 @@ export default function IAm(props) {
           <h3 className='title large'>I</h3> 
           <h3 className='title'>AM</h3> 
         </div>
-        <div className="story-container">
-        
-          <div className="story-section">
-            <Story/>
+        <div className="article-container">
+          <div className="story-container">
+            <div className="story-section">
+              <Story/>
+            </div> 
+           
           </div>
+
   
           <div className="picture-section">
             <div className="picture-grid">  
               <div className="image-container">
                 <div className="image">
                   <img src='images/pexels-francesco-ungaro-96381.jpg' alt='article'/>
-                  <div className="image-overlay"></div>
-                </div>
-              </div>
-              <div className="image-container">
-                <div className="image">
-                  <img src='images/pexels-maksim-goncharenok-4352151.jpg' alt='article'/>
                   <div className="image-overlay"></div>
                 </div>
               </div>
@@ -61,6 +59,14 @@ export default function IAm(props) {
                   <img src='images/pexels-cottonbro-studio-4067759.jpg' alt='article'/>
                   <div className="image-overlay"></div>
                 </div>
+              </div>
+              <div className="graphics-section">
+                <div className="inner-section">
+                    
+                  <Emblem name={'i-am'}/>
+                  <h4>I Am</h4>
+                </div>
+
               </div>
             </div>
             

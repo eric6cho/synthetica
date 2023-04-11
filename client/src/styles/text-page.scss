@@ -5,6 +5,26 @@
     
     padding:150px 0 0;
     
+    .graphics-section{
+      background: rgb(30,30,30);
+      padding:50px 70px;
+      margin-bottom:50px;
+      .emblem{
+        margin:10px;
+        display: inline-flex;
+
+        .center{
+          .circle,.square{
+            border-color: rgb(200,200,200);
+          }
+          .line,.dot{
+            background: rgb(200,200,200);
+          }
+        }
+      }
+    }
+
+
     .section{
       @include transition();
       width:calc(100% - 60px);

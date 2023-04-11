@@ -203,3 +203,20 @@
     }
   }
 }
+
+
+@mixin emblemColor($color){
+  
+  .center{
+
+
+    .dot,.line{
+      background: $color;
+    }
+
+    .circle,.square{
+      border-color: $color;
+    }
+ 
+  }
+}

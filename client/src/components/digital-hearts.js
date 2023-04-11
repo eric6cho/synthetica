@@ -1,5 +1,7 @@
 import './../styles/digital-hearts.scss';
 
+import Emblem from "./emblem";
+
 export default function DigitalHearts(props) {
 
   const getComponent = () => {
@@ -12,30 +14,37 @@ export default function DigitalHearts(props) {
         <div className="image-container">
           <div className="image">
             <img src='images/pexels-sami-anas-53448501.jpg' alt='article'/>
-            <div className="image-overlay"></div>
+            <div className="image-overlay">
+              
+            </div>
           </div>
         </div>
         
         <div className="poem-container">
           <div className="grid">
-            <div className="circle white"></div>
-            <div className="circle white">
+            <div className="poem-circle white"></div>
+            <div className="poem-circle white">
               <div className="text-section">
                 <Story1/>
               </div>
             </div>
-            <div className="circle white">
+            <div className="poem-circle white">
               <div className="text-section">
                 <Story2/>
               </div>
             </div>
-            <div className="circle white">
+            <div className="poem-circle white">
               <div className="text-section">
                 <Story3/>
               </div>
             </div>
-            <div className="circle blue"></div>
-            <div className="circle blue">
+            <div className="poem-circle blue">
+              <div className="graphics-section">
+                  
+                <Emblem name={props.name}/>
+              </div>
+            </div>
+            <div className="poem-circle blue">
               <div className="title-section">
                 <h3>Digital</h3>  
                 <div className="secondary">

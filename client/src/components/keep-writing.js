@@ -1,5 +1,7 @@
 import './../styles/keep-writing.scss';
 
+import Emblem from "./emblem";
+
 export default function KeepWriting(props) {
 
   const getComponent = () => {
@@ -19,6 +21,7 @@ export default function KeepWriting(props) {
           <div className='title-section'>
             <h3 className='title'>Keep Writing.</h3> 
           </div>
+
 
           <div className='dot-section'> 
             <div className='dot-row'>
@@ -42,6 +45,29 @@ export default function KeepWriting(props) {
             </div>
           </div>
 
+          <div className="graphics-section">
+            <div className="line"></div>
+            <div className="block-section">
+              <div className="left-section">
+                    
+                <Emblem name={props.name}/>
+              </div>
+
+              <div className="dot-section"></div>
+
+              <div className="right-section">
+                
+              <div className="right-section">
+                
+              <div className="right-section">
+                
+                </div>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
         </div>
       </div>;
 

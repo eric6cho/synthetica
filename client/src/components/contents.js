@@ -1,5 +1,7 @@
 import './../styles/text-page.scss';
 
+import Emblem from "./emblem";
+
 export default function Contents(props) {
 
   const getComponent = () => {
@@ -88,7 +90,7 @@ export default function Contents(props) {
 
       'VI':{
         'title':'ASCII Art Gallery',
-        'id':'ascii-art-gallery',
+        'id':'ascii-art',
         'type':'story',
         'content':true,
         'nav':true,
@@ -177,6 +179,10 @@ export default function Contents(props) {
         </div>
 
         <div className="section">
+
+          <div className="graphics-section">
+            {Object.keys(data).map(key=>data[key]['nav']&&<Emblem name={data[key]['id']}/>)}
+          </div>
 
           <h3>Contents</h3>
 

@@ -38,7 +38,7 @@
         
 
 
-        .circle{
+        .poem-circle{
           display: inline-flex;
           vertical-align: top;
           margin: 20px;
@@ -51,7 +51,19 @@
           overflow: hidden;
 
 
+          .graphics-section{
+            width:100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
+            .emblem{
+
+              @include emblemColor(rgb(255, 67, 92));
+             
+            }
+          }
                 
           .image-container{
             
@@ -77,10 +89,10 @@
           }
 
           .title-section{
-            border: 1px solid rgb(255, 67, 92);
+            border: 2px solid rgb(255, 67, 92);
             height:60px;
             width: 100%;
-            margin:0 10px;
+            margin:0 5px;
             
             display: flex;
             flex-direction: column;
@@ -94,7 +106,7 @@
             }
 
             .secondary{
-              border-top: 1px solid rgb(255, 67, 92);
+              border-top: 2px solid rgb(255, 67, 92);
               height:30px;
               width: 100%;
               display: flex;
@@ -112,7 +124,7 @@
               
               .line{
                 width:100%;
-                height:1px;
+                height:2px;
                 
                 background: rgb(255, 67, 92);
 

@@ -1,5 +1,7 @@
 import './../styles/half-steel.scss';
 
+import Emblem from "./emblem";
+
 export default function HalfSteel(props) {
 
   const getComponent = () => {
@@ -20,28 +22,55 @@ export default function HalfSteel(props) {
         </div>
 
         <div className="article-container">
+          <div className="story-container-outer">
+            <div className='story-container'>
+              <Story/>
+            
+            </div>  
+            
+          </div>
           
-          <div className='story-container'>
-            <Story/>
-          </div>
+          <div className="image-section">
+            
+            <div className="image-container">
+              <div className="image">
+                <img src='images/pexels-marlon-schmeiski-2915216.jpg' alt='article'/>
+                <div className="image-overlay">
 
-          <div className="image-container">
-            <div className="image">
-              <img src='images/pexels-marlon-schmeiski-2915216.jpg' alt='article'/>
-              <div className="image-overlay">
+                  <div className="graphics-section sm">
+
+                    <div className="inner-block"></div>
+                  
+
+                  </div>
+
+                  <div className="graphics-section">
+                    <div className="inner-block">
+                      <Emblem name={props.name}/>
+                      <div className="left">
+                        <div className="gradient"></div>
+                        <div className="dot-section">
+                          <div className="line"></div>
+                          <div className="dot"></div>
+                          <div className="dot"></div>
+                          <div className="dot"></div>
+                          <div className="dot"></div>
+                        </div>
+                      </div>
+                      
+
+                    </div>
+
+                  </div>
+                    
                 
-                <div className="dot-section">
-                  <div className="line accent"></div>
-                  <div className="dot accent"></div>
-                  <div className="dot"></div>
-                  <div className="dot"></div>
-                  <div className="dot"></div>
-                  <div className="line sm"></div>
-                </div>
 
-              </div>
-            </div>   
+                </div>
+              </div>   
+            </div>
+           
           </div>
+
         </div> 
 
         <div className='title-section'>

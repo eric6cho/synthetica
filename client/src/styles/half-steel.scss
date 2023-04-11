@@ -20,6 +20,88 @@
       
     }
 
+
+    .graphics-section{
+      padding: 5px ;
+      background: linear-gradient(0deg, rgba(150,150,150,0.5) 0%, rgba(255,255,255,0.5) 100%);
+         
+      border-radius: 0 100px 100px 100px;
+     
+      display:flex;
+      width:100%;
+      align-items: center;
+      margin-top: 5px;
+
+      &.sm{
+        width:90px;
+        height:40px;
+        border-radius: 15px 90% 10px 0;
+        background: linear-gradient(0deg, rgba(150,150,150,0.5) 0%, rgba(255,255,255,0.5) 100%);
+      
+        margin-top: auto;
+        margin-right: auto;
+
+        .inner-block{
+          
+          border-radius: 15px 180% 10px 0;
+        }
+      }
+
+      .inner-block{
+        border-radius: 0 100px 100px 100px;
+        background: rgba(255,255,255,0.4);
+        padding: 5px 20px 5px 5px;
+        display:flex;
+        width:100%;
+        height:100%;
+        align-items: center;
+      }
+
+      .left{
+        width:100%;
+      }
+
+      .gradient{
+        background: linear-gradient(90deg, rgb(0, 0, 0) 10%,rgb(255, 90, 131) 30%,rgb(8, 38, 209) 45%,rgb(37, 193, 255) 60%, rgb(196, 255, 247) 80%);
+        width:100%;
+        height:5px;
+        margin-bottom:7px;
+        border-radius: 100px;
+
+
+      }
+
+      .dot-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding:0;
+        height:7px;
+
+        .line{
+          width:100%;
+          height:5px;
+          background: linear-gradient(90deg, rgb(0, 0, 0) 0%,rgb(228, 196, 57) 40%, rgb(255, 251, 239) 90%);
+          margin-left: 0;
+          border-radius: 100px;
+        }
+        .dot{
+          width:7px;
+          min-width: 7px;
+          height:7px;
+          background: black;
+          margin-left: 7px;
+          border-radius: 50%;
+        }
+      }
+
+      .emblem{
+        margin-right:15px;
+
+        @include emblemColor(rgb(0,0,0));
+      }
+
+    }
     .article-container{
       display: flex;
       flex-direction: column;
@@ -28,49 +110,27 @@
       justify-content: center;
     }
 
+    .image-section{
+
+      margin: 5vw auto 0;
+
+    }
     .image-container{
       padding: 5vw;
       border: 10px solid white;
-      border-right: 10px solid rgb(255, 56, 106);
-      border-bottom: 10px solid rgb(255, 56, 106);
+      //border-right: 10px solid rgb(255, 56, 106);
+      //border-bottom: 10px solid rgb(255, 56, 106);
       width:90vw;
       min-width:90vw;
       height:90vw;
       display: flex;
-      margin: 5vw auto 0;
     }
     
     .image{
       .image-overlay{
         background: rgba(4, 0, 255, 0.2);
-      }
-    }
-
-    .dot-section{
-      display:flex;
-      flex-direction: column;
-      height:480px;
-      padding: 20px;
-      margin-right: auto;
-
-      .dot,.line{
-        min-height:10px;
-        width:10px;
-        height:10px;
-        background: rgb(235,235,235);
-        margin-bottom:20px;
-
-        &.accent{
-          background:rgb(255, 56, 106);
-        }
-      }
-
-      .line{
-        height:100%;
-        
-        &.sm{
-          height: 100px;
-        }
+        padding:10px;
+        flex-direction: column;
       }
     }
 
@@ -152,12 +212,18 @@
         top:250px;
       }
 
+      .image-section{
+            
+        margin: 100px auto 0;
+
+      }
+
       .image-container{
         padding: 50px;
         width:700px;
         min-width:700px;
         height:700px;
-        margin: 100px auto 0;
+        
       }
       
       .dot-section{
@@ -195,13 +261,18 @@
       .article-container{
         flex-direction: row;
       }
-      
+            
+      .image-section{
+            
+        margin: auto 0 -330px 20px;
+
+      }
+
       .image-container{
         padding: 20px;
         width:500px;
         min-width:500px;
         height:500px;
-        margin: auto 0 -330px 20px;
       }
       
       .dot-section{

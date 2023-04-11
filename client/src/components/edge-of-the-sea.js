@@ -1,4 +1,5 @@
 import './../styles/edge-of-the-sea.scss';
+import Emblem from "./emblem";
 
 export default function EdgeOfTheSea(props) {
 
@@ -16,6 +17,30 @@ export default function EdgeOfTheSea(props) {
               
               <div className="title-section">  
                 <h3 className='title'>The Edge Of The Sea</h3>
+
+
+
+                <div className="graphics-section mobile">
+
+                  <Emblem name={props.name}/>
+               
+                </div>
+
+                <div className="graphics-section">
+
+                  <Emblem name={props.name}/>
+                  <div className="block">
+                    <div className="inner"></div>
+                    <div className="inner"></div>
+                    <div className="inner"></div>
+                  </div>
+
+                  <Emblem name={props.name}/>
+
+                
+                
+                </div>
+
                 <div className='corner corner-1'></div>
                 <div className='corner corner-2'></div>
                 <div className='corner corner-3'></div>
@@ -25,6 +50,7 @@ export default function EdgeOfTheSea(props) {
             </div>
           </div>
         </div>
+
 
         <div className="story-container">
           <div className="story-half">

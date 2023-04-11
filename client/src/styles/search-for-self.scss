@@ -87,6 +87,23 @@
       }
     }
 
+
+    .graphics-section{
+      position: absolute;
+      width:50px;
+      height:calc(100% - 40px);
+      display: flex;
+      flex-direction: column;
+      top:20px;
+      right:20px;
+      .emblem{
+        &:first-child{
+          margin-bottom: auto;
+        } 
+
+        @include emblemColor(rgb(0,30,150));
+      }
+    }
     .image{      
       .image-overlay{
         background: rgba(10, 20, 60, 0.5);

@@ -1,5 +1,7 @@
 import './../styles/search-for-self.scss';
 
+import Emblem from "./emblem";
+
 export default function SearchForSelf(props) {
 
   const getComponent = () => {
@@ -57,6 +59,11 @@ export default function SearchForSelf(props) {
                   <h3 className='title'>Search</h3> 
                   <h3 className='title'>For</h3> 
                   <h3 className='title'>Self </h3> 
+                </div>
+
+                <div className="graphics-section">
+                  <Emblem name={props.name}/>
+                  <Emblem name={props.name}/>
                 </div>
               </div>
             </div>

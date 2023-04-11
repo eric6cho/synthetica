@@ -1,4 +1,5 @@
 import './../styles/ai-brunch.scss';
+import Emblem from './emblem';
 
 export default function AIBrunch(props) {
 
@@ -40,9 +41,26 @@ export default function AIBrunch(props) {
           </div>
 
           <div className='image-section'>
+            <div className="image-underlay">  
+              <div className="graphics-section">
+                <div className="block">
+                  <div className="inner"></div>
+                </div>
+                <div className="block">
+                  <div className="inner"></div>
+                </div>
+                <div className="block">
+                  <div className="inner"></div>
+                </div>
+                <Emblem name={props.name}/>
+              </div>
+            </div>
             <div className="image">
               <img src='images/pexels-jaysen-scott-1858488.jpg' alt='article'/>
-              <div className="image-overlay"></div>
+              
+              <div className="image-overlay">
+               
+              </div>
             </div>
           </div>
 
