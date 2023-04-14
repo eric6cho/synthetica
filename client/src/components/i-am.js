@@ -9,8 +9,7 @@ export default function IAm(props) {
       <div className={'component '+props.name}>
 
         <div className='id-marker' id={props.name}></div>
-         
-
+      
         <div className="main-image-container">
           <div className="image">
             <img src='images/pexels-paul-voie-2627945.jpg' alt='article'/>
@@ -18,9 +17,6 @@ export default function IAm(props) {
             </div>
           </div>
         </div>
-
-
-     
         <div className='title-section'>
           <h3 className='title large'>I</h3> 
           <h3 className='title'>AM</h3> 
@@ -30,10 +26,7 @@ export default function IAm(props) {
             <div className="story-section">
               <Story/>
             </div> 
-           
           </div>
-
-  
           <div className="picture-section">
             <div className="picture-grid">  
               <div className="image-container">
@@ -61,21 +54,14 @@ export default function IAm(props) {
                 </div>
               </div>
               <div className="graphics-section">
-                <div className="inner-section">
-                    
+                <div className="inner-section">   
                   <Emblem name={'i-am'}/>
                   <h4>I Am</h4>
                 </div>
-
               </div>
             </div>
-            
           </div>
-
         </div>
-
-
-
       </div>;
 
     return component;

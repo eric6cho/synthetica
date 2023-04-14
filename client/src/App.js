@@ -45,8 +45,8 @@ export default function App() {
         <DivisionScreen 
           id={stories} 
           title={'Part I of Synthetica'}
-          imagePrimary={'images/pexels-david-geib-3220850.jpg'}
-          imageSecondary={'images/pexels-quang-nguyen-vinh-2131828.jpg'}
+          imageSecondary={'images/pexels-david-geib-3220850.jpg'}
+          imagePrimary={'images/pexels-quang-nguyen-vinh-2131828.jpg'}
           />
 
         <AIBrunch name={stories[0]}/>
@@ -58,8 +58,8 @@ export default function App() {
         <DivisionScreen 
           id={stories} 
           title={'Part II of Synthetica'}
-          imagePrimary={'images/pexels-shvets-anna-2570059.jpg'}
-          imageSecondary={'images/pexels-anni-roenkae-2317742.jpg'}
+          imageSecondary={'images/pexels-shvets-anna-2570059.jpg'}
+          imagePrimary={'images/pexels-anni-roenkae-2317742.jpg'}
           />
 
         <ASCIIArt name={stories[5]}/>
@@ -71,8 +71,8 @@ export default function App() {
         <DivisionScreen 
           id={stories} 
           title={'End of Synthetica'}
-          imagePrimary={'images/pexels-ivan-bertolazzi-2681405.jpg'}
-          imageSecondary={'images/pexels-george-desipris-753619.jpg'}
+          imageSecondary={'images/pexels-ivan-bertolazzi-2681405.jpg'}
+          imagePrimary={'images/pexels-george-desipris-753619.jpg'}
           />
 
         <Commentary/>
@@ -87,8 +87,6 @@ export default function App() {
 
 /*
 
-clean up mobile stylesheet for ascii art
-
 clean up components stylesheets
 
 clean up mixins stylesheets
@@ -100,7 +98,5 @@ clean up app component
 create data to send from app to nav and components
 
 clean up backend
-
-
 
 */

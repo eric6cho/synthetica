@@ -21,11 +21,11 @@
 
       .title{
         @include transition();
-        font-size: 30px;
-        font-weight: 600; 
-        letter-spacing: 2px;
-        color:rgb(10,10,10);
         font-family: GLoock, serif;
+        font-size: 30px;
+        font-weight: 700; 
+        letter-spacing: 3px;
+        color:rgb(10,10,10);
         margin-bottom: 20px;   
       }
 

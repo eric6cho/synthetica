@@ -7,11 +7,11 @@ export default function DivisionScreen(props) {
     let component = 
       <div className='component division-screen'>
         <div className="image">
-          <img src={props.imagePrimary} alt='article'/>
+          <img src={props.imageSecondary} alt='article'/>
           <div className="image-overlay">
             <div className="image-container">
               <div className="image">
-                <img src={props.imageSecondary} alt='article'/>
+                <img src={props.imagePrimary} alt='article'/>
                 <div className="image-overlay"></div>
               </div>
             </div>

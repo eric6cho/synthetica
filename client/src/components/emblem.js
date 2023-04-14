@@ -5,9 +5,48 @@ export default function Emblem(props) {
 
   const getComponent = () => {
 
-
     let emblem = <></>;
 
+    if(props.name==='home')
+      emblem = 
+        <>
+          <div className="square s-1"></div>
+        </>;
+
+    
+    if(props.name==='part-i')
+      emblem = 
+        <>
+        <div className="square s-1"></div>
+          <div className="line l-1"></div>
+        </>;
+
+    if(props.name==='part-ii')
+      emblem = 
+        <>
+        <div className="square s-1"></div>
+          <div className="line l-1"></div>
+          <div className="line l-2"></div>
+        </>;
+
+    if(props.name==='end')
+      emblem = 
+        <>
+        <div className="square s-1"></div>
+          <div className="line l-1"></div>
+          <div className="line l-2"></div>
+          <div className="line l-3"></div>
+        </>;
+        
+    if(props.name==='commentary')
+      emblem = 
+        <>
+        <div className="square s-1"></div>
+          <div className="line l-1"></div>
+          <div className="line l-2"></div>
+          <div className="line l-3"></div>
+          <div className="line l-4"></div>
+        </>;
 
     if(props.name==='ai-brunch')
       emblem = 
@@ -16,7 +55,6 @@ export default function Emblem(props) {
           <div className="circle c-1"></div>
           <div className="circle c-2"></div>
           <div className="line l-1"></div>
-          
         </>;
 
     if(props.name==='binary-ballet')
@@ -35,19 +73,18 @@ export default function Emblem(props) {
           <div className="line l-8"></div>
         </>;
 
-      
     if(props.name==='digital-hearts')
-    emblem = 
-      <>
-        <div className="circle c-1"></div>
-        <div className="circle c-2"></div>
-        <div className="circle c-3"></div>
-        <div className="circle c-4"></div>
+      emblem = 
+        <>
+          <div className="circle c-1"></div>
+          <div className="circle c-2"></div>
+          <div className="circle c-3"></div>
+          <div className="circle c-4"></div>
           <div className="line l-1"></div>
           <div className="line l-2"></div>
           <div className="line l-3"></div>
           <div className="line l-4"></div>
-      </>;
+        </>;
 
     if(props.name==='awakened-inspiration')
       emblem = 
@@ -64,11 +101,11 @@ export default function Emblem(props) {
           <div className="dot d-8"></div>
         </>;
 
-
     if(props.name==='keep-writing')
       emblem = 
         <>
           <div className="circle c-1"></div>
+          <div className="dot d-1"></div>
           <div className="dot d-2"></div>
           <div className="dot d-3"></div>
           <div className="dot d-4"></div>
@@ -80,7 +117,6 @@ export default function Emblem(props) {
           <div className="dot d-10"></div>
           <div className="dot d-11"></div>
           <div className="dot d-12"></div>
-          <div className="dot d-13"></div>
         </>;
 
     if(props.name==='ascii-art')
@@ -91,7 +127,6 @@ export default function Emblem(props) {
           <div className="circle c-3"></div>
           <div className="circle c-4"></div>
         </>;
-
 
     if(props.name==='search-for-self')
       emblem = 
@@ -112,22 +147,16 @@ export default function Emblem(props) {
         <>
           <div className="line l-1"></div>
           <div className="line l-2"></div>
-        
-
           <div className="square s-1"></div>
           <div className="square s-2"></div>
           <div className="square s-3"></div>
           <div className="square s-4"></div>
           <div className="square s-5"></div>
-        
-      
         </>;
-
 
     if(props.name==='edge-of-the-sea')
       emblem = 
-        <>
-        
+        <> 
           <div className="square s-1"></div>
           <div className="circle c-1"></div>
           <div className="line l-1"></div>
@@ -142,10 +171,7 @@ export default function Emblem(props) {
           <div className="dot d-2"></div>
           <div className="dot d-3"></div>
           <div className="dot d-4"></div>
-       
         </>;
-
-
 
     if(props.name==='i-am')
       emblem = 
@@ -170,4 +196,3 @@ export default function Emblem(props) {
 
   return getComponent();
 }
-

@@ -32,6 +32,7 @@
       position: relative;
 
         .image-underlay{
+          @include transition();
           position: absolute;
           width:calc(100% + 40px);
           height:600px;
@@ -46,6 +47,7 @@
         }
       .image{
 
+        @include transition();
         border-radius: 1000px 1000px 200px 200%;
       }
     }
@@ -198,8 +200,13 @@
         //overflow: hidden;
         height:100vh;
         max-width: 300px;
-        border-radius: 10000px 10000px 0 0;
+        //border-radius: 10000px 10000px 0 0;
         display: flex;
+
+        .image{
+
+          border-radius: 500px 500px 100px 300%;
+        }
       }
   
       
@@ -244,7 +251,10 @@
         width: 50%;
         max-width: none;
      
-        
+        .image{
+
+          border-radius: 1000px 1000px 100px 200%;
+        }
       }
   
       .dot-section{

@@ -22,7 +22,7 @@ const Story = () =>
   
     <h3>A Human Word: Commentary</h3>
 
-    <h4>About Synthetica:</h4>
+    <h4 className='section-title'>About Synthetica:</h4>
 
     <p>
       Synthetica is an art project showcasing the creative expressions
@@ -30,7 +30,7 @@ const Story = () =>
     </p>
 
     
-    <h4>Overall Themes:</h4>
+    <h4 className='section-title'>Overall Themes:</h4>
 
     <p>
       Within the ten stories written for this project, most of these deal 
@@ -48,7 +48,7 @@ const Story = () =>
       writing everytime it wants to end the story.
     </p>
 
-    <h4>The Writing Process:</h4>
+    <h4 className='section-title'>The Writing Process:</h4>
 
     <p>
       For each story, there is a human written prompt given to ChatGPT; 
@@ -69,7 +69,7 @@ const Story = () =>
     </p>
 
 
-    <h4>Technical Limitations:</h4>
+    <h4 className='section-title'>Technical Limitations:</h4>
 
     <p>
       ChatGPT has a basic understanding of how English writing styles work, 
@@ -111,7 +111,7 @@ const Story = () =>
 
 
 
-    <h4>More Links:</h4>
+    <h4 className='section-title'>More Links:</h4>
 
     <p>
       Explore ChatGPT here at <a href='https://openai.com/'>OpenAI</a>
