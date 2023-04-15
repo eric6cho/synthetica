@@ -6,6 +6,7 @@ export default function DivisionScreen(props) {
 
     let component = 
       <div className='component division-screen'>
+        <div className='id-marker' id={props.name}></div>
         <div className="image">
           <img src={props.imageSecondary} alt='article'/>
           <div className="image-overlay">

@@ -6,7 +6,11 @@ export default function Nav(props) {
 
     let component = 
       <div className='component nav'>
-        <h3 className='title'>Synthetica</h3>
+        <a href={'#home'} className={'link title'}>
+          <div className="blue-dot"></div>
+          <h3 className='title'>Synthetica</h3>
+        </a>
+        
         <a href={'#'+props.id[0]} className={'link link-'+props.id[0]}>I</a>
         <a href={'#'+props.id[1]} className={'link link-'+props.id[1]}>II</a>
         <a href={'#'+props.id[2]} className={'link link-'+props.id[2]}>III</a>

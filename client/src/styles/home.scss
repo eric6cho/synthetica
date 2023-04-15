@@ -27,6 +27,18 @@
         letter-spacing: 3px;
         color:rgb(10,10,10);
         margin-bottom: 20px;   
+        display: flex;
+        align-items: center;
+
+        .blue-dot{
+          margin-right: 7px;
+          height:22px;
+          width:22px;
+          min-width: 22px;
+          border-radius: 50%;
+          background: blue;
+          margin-bottom: -7px;
+        }
       }
 
       .subtitle{

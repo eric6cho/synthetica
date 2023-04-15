@@ -2,80 +2,74 @@
 
 .text-page{
   &.component{
-    
-    
-
-    padding:0 0 200px;
    
     h3{
       @include transition();
-      font-weight: 600; 
+      font-family: GLoock, serif;
       font-size: 24px;
+      font-weight: 600; 
       word-spacing: 2px;
       letter-spacing: 1px;
       margin-bottom: 50px;
-      font-family: GLoock, serif;
       text-align: center;
     }
-
-    
 
     h4{
       @include transition();
       font-family: GLoock, serif;
-      font-weight: 600; 
       font-size: 16px;
+      font-weight: 600; 
       word-spacing: 2px;
       letter-spacing: 2px;
       color:black;
       text-align: justify;
     }
 
-
-
-
-
     p{
       @include transition();
       font-size: 12px;
       text-align: justify;
       color:black;
-      margin-bottom: 40px;
-
-      
+      margin-bottom: 20px; 
     }
-
-
     
     .section{
       @include transition();
       width:calc(100% - 60px);
       max-width: 500px;
-      margin:100px auto 300px;
+      margin:100px auto;
+    }
+    
+    .commentary-section{
+      width:calc(100% - 60px);
+      max-width: 500px;
+      margin: 100px auto;
+      padding-bottom: 100px;
 
       .section-title{
         margin: 0 0 8px;
         padding-bottom: 10px;
         border-bottom: 1px solid black;
       }
- 
+
+      .commentary-subsection{
+        margin-bottom:50px;
+      }
     }
 
     .contents-section{
-      width:calc(100% - 40px);
+      width:calc(100% - 30px);
       max-width: 500px;
-      margin: 300px auto;
-
+      margin: 200px auto;
+      padding-bottom: 100px;
     }
     
     .chapter{
-
       display:flex;
       margin-bottom: 10px;
       align-items: center;
       overflow: hidden;
       position:relative;
-
 
       .text-section{
         @include transition(0.1);
@@ -99,15 +93,14 @@
           margin: 5px 0 0;
           text-align: left;
           font-size: 11px;
-
         }
       }
 
       .line-section{
         @include transition(0);
         height:2px;
-        width:5px;
-        min-width: 5px;
+        width:10px;
+        min-width: 10px;
         background: rgb(30,30,30);
         display:none;
       }
@@ -115,59 +108,44 @@
       .emblem-section{
         @include transition(0.3);
         height:100px;
-        width:0px;
-        min-width: 0px;
+        width:100px;
+        min-width: 100px;
         display: flex;
         align-items: center;
-        border:0;
-        //border: 2px solid rgb(30,30,30);
         border-radius: 50%;
         overflow: hidden;
         display:none;
-        
-      
 
         .navigation-text{
           @include transition(0.3);
-          display:none;
-          color: transparent;
-          font-weight: 500; 
+          font-family: GLoock, serif;
           font-size: 12px;
+          font-weight: 500; 
           word-spacing: 2px;
           letter-spacing: 2px;
-          font-family: GLoock, serif;
+          color: transparent;
           width:100%;
           margin: auto 0 ;
           color:white;
           text-align: left;
+          display:none;
         }
         
         .emblem{
           @include transition(0.3);
           margin:23px;
-
-          @include emblemColor(rgb(50,50,50));
-          
+          @include emblemColor(rgb(50,50,50)); 
         }
-
-
-
-
       }
 
       &:hover{
-      
         .text-section{
-          
           background:rgb(60,60,60);
             
           .chapter-title,.chapter-description{
             color:white;
           }
-        
         }
-
-        
       }
 
       &.right{
@@ -192,217 +170,71 @@
         }
 
         &:hover{  
-         
-
           .emblem-section{
             border-radius: 0 1000px 1000px 0;
           }
         }
       }
 
-
-
       &.full{
-        //margin:0 110px 20px 0;
         margin:0 0 10px 0;
-        
-        .text-section{
-          //border-radius: 1000px;
-        }
-
-        &:hover{
-
-          .emblem-section{
-            //border-radius: 1000px;
-          }
-        }
-
-
-        &.right{
-          
-          //margin:0 0 20px 110px;
-          
-  
-
-          
-        }
       }
-
-
     }
-
 
     .contents-main{
       display: flex;
       flex-direction: column;
-      //margin:0 -10px;
-
+  
       .contents-list{
-        //margin:10px;
-        //width:100%;
-        //max-width: 100%;
-
+        width:100%;
+        max-width: 100%;
       }
     }
- 
   }
 }
-
 
 @include media-md{ //>768px
   .text-page{
     &.component{
       
-        
-
-      padding:0 0 200px;
-    
-      h3{
-        @include transition();
-        font-weight: 600; 
-        font-size: 24px;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-        margin-bottom: 50px;
-        font-family: GLoock, serif;
-        text-align: center;
-      }
-
-      
-
-      h4{
-        @include transition();
-        font-family: GLoock, serif;
-        font-weight: 600; 
-        font-size: 16px;
-        word-spacing: 2px;
-        letter-spacing: 2px;
-        color:black;
-        text-align: justify;
-      }
-
-
-
-
-
-      p{
-        @include transition();
-        font-size: 12px;
-        text-align: justify;
-        color:black;
-        margin-bottom: 40px;
-
-        
-      }
-
-
-      
       .section{
-        @include transition();
-        width:calc(100% - 60px);
-        max-width: 500px;
-        margin:100px auto 300px;
-
-        .section-title{
-          margin: 0 0 8px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid black;
-        }
-  
+        margin:100px auto 200px;
+      }
+      
+      .commentary-section{
+        margin: 200px auto;
+        padding-bottom: 200px;
       }
 
       .contents-section{
-        width:calc(100% - 200px);
-        max-width: 700px;;
-        margin: 300px auto;
-
+        padding-bottom: 200px;
       }
-      
+        
       .chapter{
-
-        display:flex;
         margin-bottom: 25px;
-        align-items: center;
-        overflow: hidden;
-
 
         .text-section{
-          @include transition(0.1);
-          height:100px;
-          width:100%;
-          border-radius: 1000px 0 0 1000px;
-          border: 2px solid rgba(30,30,30,1);
-          padding: 0 15px 0 30px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          overflow: hidden;
-
           .chapter-title{
-            width:100%;
             font-size: 13px;
-          }
-    
-          .chapter-description{
-            width: 100%;
-            margin: 5px 0 0;
           }
         }
 
         .line-section{
-          @include transition(0);
-          height:2px;
-          width:10px;
-          min-width: 10px;
-          background: rgb(30,30,30);
           display:block;
         }
 
         .emblem-section{
-          @include transition(0.3);
-          height:100px;
-          width:100px;
-          min-width: 100px;
           display: flex;
           border: 2px solid rgb(30,30,30);
-          border-radius: 50%;
-          overflow: hidden;
-
-          .navigation-text{
-            display:none;
-            color: transparent;
-            font-weight: 500; 
-            font-size: 12px;
-            word-spacing: 2px;
-            letter-spacing: 2px;
-            font-family: GLoock, serif;
-            width:100%;
-            margin: auto 0 ;
-            color:white;
-          }
-          
-          .emblem{
-            @include transition(0.3);
-            margin:23px;
-
-            @include emblemColor(rgb(50,50,50));
-          }
-
-
-
-
         }
 
         &:hover{
-        
           .text-section{
-            
             display:none;
               
             .chapter-title,.chapter-description{
               display: none;
             }
-          
           }
 
           .line-section{
@@ -425,81 +257,7 @@
             }
           }
         }
-
-        &.right{
-          flex-direction: row-reverse;
-
-          .text-section{
-            border-radius: 0 1000px 1000px 0;
-            padding: 0 30px 0 15px;
-
-            .chapter-title,.chapter-description{
-              text-align: end;
-            }
-          }
-
-          .emblem-section{
-            justify-content: flex-end;
-            flex-direction: row-reverse;
-
-            .navigation-text{
-              text-align: end;
-            }
-          }
-
-          &:hover{  
-          
-
-            .emblem-section{
-              border-radius: 0 1000px 1000px 0;
-            }
-          }
-        }
-
-
-
-        &.full{
-          margin:0 0 20px 0;
-          
-          .text-section{
-            //border-radius: 1000px;
-          }
-
-          &:hover{
-
-            .emblem-section{
-              //border-radius: 1000px;
-            }
-          }
-
-
-          &.right{
-            
-            //margin:0 0 20px 110px;
-            
-    
-
-            
-          }
-        }
-
-
-      }
-
-
-      .contents-main{
-        display: flex;
-        //margin:0 -10px;
-
-        .contents-list{
-          //margin:10px;
-          width:100%;
-          max-width: 100%;
-
-        }
-      }
-  
-    
+      }    
     }
   }
 }
@@ -508,210 +266,32 @@
   .text-page{
     &.component{
       
-        
-
-      padding:0 0 200px;
-    
-      h3{
-        @include transition();
-        font-weight: 600; 
-        font-size: 24px;
-        word-spacing: 2px;
-        letter-spacing: 1px;
-        margin-bottom: 50px;
-        font-family: GLoock, serif;
-        text-align: center;
-      }
-
-      
-
-      h4{
-        @include transition();
-        font-family: GLoock, serif;
-        font-weight: 600; 
-        font-size: 16px;
-        word-spacing: 2px;
-        letter-spacing: 2px;
-        color:black;
-        text-align: justify;
-      }
-
-
-
-
-
-      p{
-        @include transition();
-        font-size: 12px;
-        text-align: justify;
-        color:black;
-        margin-bottom: 40px;
-
-        
-      }
-
-
-      
       .section{
-        @include transition();
-        width:calc(100% - 60px);
-        max-width: 500px;
         margin:100px auto 300px;
-
-        .section-title{
-          margin: 0 0 8px;
-          padding-bottom: 10px;
-          border-bottom: 1px solid black;
-        }
-  
       }
 
-      .contents-section{
-        width:1000px;
+      .commentary-section{
         max-width:1000px;
         margin: 300px auto;
 
+        .commentary-contents{
+          display:flex;
+          margin: 0 -10px;
+
+          .commentary-contents-half{
+            margin:10px;
+            width:50%;
+            max-width: 50%;            
+          }
+        }
+      }
+
+      .contents-section{
+        max-width:1000px;
+        margin: 300px auto;
       }
       
       .chapter{
-
-        display:flex;
-        margin-bottom: 25px;
-        align-items: center;
-        overflow: hidden;
-
-
-        .text-section{
-          @include transition(0.1);
-          height:100px;
-          width:100%;
-          border-radius: 1000px 0 0 1000px;
-          border: 2px solid rgba(30,30,30,1);
-          padding: 0 15px 0 30px;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          overflow: hidden;
-
-          .chapter-title{
-            width:100%;
-            font-size: 13px;
-          }
-    
-          .chapter-description{
-            width: 100%;
-            margin: 5px 0 0;
-          }
-        }
-
-        .line-section{
-          @include transition(0);
-          height:2px;
-          width:10px;
-          min-width: 10px;
-          background: rgb(30,30,30);
-        }
-
-        .emblem-section{
-          @include transition(0.3);
-          height:100px;
-          width:100px;
-          min-width: 100px;
-          display: flex;
-          border: 2px solid rgb(30,30,30);
-          border-radius: 50%;
-          overflow: hidden;
-
-          .navigation-text{
-            display:none;
-            color: transparent;
-            font-weight: 500; 
-            font-size: 12px;
-            word-spacing: 2px;
-            letter-spacing: 2px;
-            font-family: GLoock, serif;
-            width:100%;
-            margin: auto 0 ;
-            color:white;
-          }
-          
-          .emblem{
-            @include transition(0.3);
-            margin:23px;
-
-            @include emblemColor(rgb(50,50,50));
-          }
-
-
-
-
-        }
-
-        &:hover{
-        
-          .text-section{
-            
-            display:none;
-              
-            .chapter-title,.chapter-description{
-              display: none;
-            }
-          
-          }
-
-          .line-section{
-            width:0;
-            min-width: 0;
-            background: none;
-          }
-
-          .emblem-section{
-            background:rgb(60,60,60);
-            width:100%;
-            border-radius: 1000px 0 0 1000px;
-
-            .navigation-text{
-              display: block;
-            }
-
-            .emblem{
-              @include emblemColor(rgb(255,255,255));
-            }
-          }
-        }
-
-        &.right{
-          flex-direction: row-reverse;
-
-          .text-section{
-            border-radius: 0 1000px 1000px 0;
-            padding: 0 30px 0 15px;
-
-            .chapter-title,.chapter-description{
-              text-align: end;
-            }
-          }
-
-          .emblem-section{
-            justify-content: flex-end;
-            flex-direction: row-reverse;
-
-            .navigation-text{
-              text-align: end;
-            }
-          }
-
-          &:hover{  
-          
-
-            .emblem-section{
-              border-radius: 0 1000px 1000px 0;
-            }
-          }
-        }
-
-
-
         &.full{
           margin:0 110px 20px 0;
           
@@ -720,29 +300,18 @@
           }
 
           &:hover{
-
             .emblem-section{
               border-radius: 1000px;
             }
           }
 
-
-          &.right{
-            
+          &.right{            
             margin:0 0 20px 110px;
-            
-    
-
-            
           }
         }
-
-
       }
 
-
       .contents-main{
-        display: flex;
         flex-direction: row;
         margin:0 -10px;
 
@@ -750,15 +319,8 @@
           margin:10px;
           width:50%;
           max-width: 50%;
-
         }
       }
-  
-
-
-
     }
   }
 }
-
-// 302 294 278 273 762

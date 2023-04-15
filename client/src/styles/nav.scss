@@ -16,15 +16,6 @@
     z-index: 100;
     padding:0;
 
-    .title{
-      font-size: 12px;
-      font-weight: 400;
-      letter-spacing: 1px;
-      font-family: GLoock, serif;
-      margin: 0 auto 0 20px;
-      display: none;
-      color: white;
-    }
 
     .link{
       @include transition();
@@ -39,96 +30,39 @@
       justify-content: center;
       color: white;
 
-      &.link-ai-brunch{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(173, 150, 255);
-        &:hover,&:active,&:focus{
-          background: rgb(173, 150, 255);
-          color:black;
-        }
-      }
       
-      &.link-binary-ballet{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(255, 185, 56);
-        &:hover,&:active,&:focus{
-          background: rgb(255, 210, 127);
-          color:black;
+      &.title{
+        
+        width: 102px;
+        height:100%;
+        display: none;
+        align-items: center;
+        margin: 0 auto 0 0;
+        justify-content: flex-start;
+          
+        .blue-dot{
+          height:12px;
+          width:12px;
+          min-width: 12px;
+          background: blue;
+          border-radius: 50%;
+          margin:5px 5px 5px 7px;
+        }
+
+        h3{
+          font-family: GLoock, serif;
+          font-size: 12px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          color: white;
+
         }
       }
 
-      &.link-awakened-inspiration{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(127, 246, 255);
-        &:hover,&:active,&:focus{
-          background: rgb(127, 246, 255);
-          color:black;
-        }
+      &:hover,&:active,&:focus{
+        background: rgb(141, 171, 255);
+        color:black;
       }
-      
-      &.link-search-for-self{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(30, 30, 255);
-        &:hover,&:active,&:focus{
-          background: rgb(49, 121, 255);
-          color:black;
-        }
-      }
-      
-      &.link-keep-writing{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(121, 233, 151);
-        &:hover,&:active,&:focus{
-          background: rgb(121, 233, 151);
-          color:black;
-        }
-      }
-
-      &.link-half-steel{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(255, 50, 152);
-        &:hover,&:active,&:focus{
-          background: rgb(255, 102, 179);
-          color:black;
-        }
-      }
-
-      &.link-ascii-art{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(95, 51, 255);
-        &:hover,&:active,&:focus{
-          background: rgb(173, 150, 255);
-          color:black;
-        }
-      }
-
-      &.link-digital-hearts{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(255, 30, 30);
-        &:hover,&:active,&:focus{
-          background: rgb(255, 72, 72);
-          color:black;
-        }
-      }
-
-      &.link-edge-of-the-sea{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(170, 207, 255);
-        &:hover,&:active,&:focus{
-          background: rgb(170, 207, 255);
-          color:black;
-        }
-      } 
-
-      &.link-i-am{
-        border-top: 3px solid transparent;
-        border-bottom: 3px solid rgb(255, 122, 46);
-        &:hover,&:active,&:focus{
-          background: rgb(255, 147, 84);
-          color:black;
-        }
-      }
-
     }
   }
 }
@@ -148,15 +82,15 @@
       top: calc(100% - 30px);
       padding:0;
      
-      .title{
-        
-        display: block;
-      }
   
       .link{
         height: 30px;
         width: 50px;
   
+      &.title{
+        
+        display: flex;
+      }
       }
     }
   }

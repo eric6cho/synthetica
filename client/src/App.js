@@ -43,6 +43,7 @@ export default function App() {
         <Contents id={stories}/>
 
         <DivisionScreen 
+          name={'part-i'}
           id={stories} 
           title={'Part I of Synthetica'}
           imageSecondary={'images/pexels-david-geib-3220850.jpg'}
@@ -56,6 +57,7 @@ export default function App() {
         <KeepWriting name={stories[4]}/>
 
         <DivisionScreen 
+          name={'part-ii'}
           id={stories} 
           title={'Part II of Synthetica'}
           imageSecondary={'images/pexels-shvets-anna-2570059.jpg'}
@@ -69,6 +71,7 @@ export default function App() {
         <IAm name={stories[9]}/>
         
         <DivisionScreen 
+          name={'end'}
           id={stories} 
           title={'End of Synthetica'}
           imageSecondary={'images/pexels-ivan-bertolazzi-2681405.jpg'}
