@@ -72,9 +72,9 @@ export default function ASCIIArt(props) {
 
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
 
         <div className="main-image-container">  
           <div className="image">
@@ -101,7 +101,7 @@ export default function ASCIIArt(props) {
                   <h3>ASCII Art Gallery</h3>
                 </div>
               </div>
-              <Emblem name={props.name}/>
+              <Emblem name={props.data['id']}/>
             </div>
     
           </div>

@@ -85,26 +85,12 @@
   
       .link{
         height: 30px;
-        width: 50px;
+        width: 40px;
   
       &.title{
         
         display: flex;
       }
-      }
-    }
-  }
-}
-
-@include media-xxl{ //>1400px
-
-  .nav{
-    &.component{
-    
-
-      .link{
-        width: 60px;
-  
       }
     }
   }

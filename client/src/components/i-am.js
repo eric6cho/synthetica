@@ -6,9 +6,9 @@ export default function IAm(props) {
   const getComponent = () => {
     
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
       
         <div className="main-image-container">
           <div className="image">
@@ -55,7 +55,7 @@ export default function IAm(props) {
               </div>
               <div className="graphics-section">
                 <div className="inner-section">   
-                  <Emblem name={'i-am'}/>
+                  <Emblem name={props.data['id']}/>
                   <h4>I Am</h4>
                 </div>
               </div>

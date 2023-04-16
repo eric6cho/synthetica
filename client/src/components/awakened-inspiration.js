@@ -7,9 +7,9 @@ export default function AwakenedInspiration(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
         
         <div className="main-image">
           <div className="image">
@@ -22,7 +22,7 @@ export default function AwakenedInspiration(props) {
 
           <div className='title-section'>
 
-              <Emblem name={props.name}/>
+              <Emblem name={props.data['id']}/>
               <div className="dot-lg"></div>
               <div className="dot-lg"></div>
               <div className="line-lg"></div>

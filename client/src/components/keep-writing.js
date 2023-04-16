@@ -7,9 +7,9 @@ export default function KeepWriting(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
     
         <div className="image">
           <img src='images/pexels-gianluca-grisenti-4215113.jpg' alt='article'/>
@@ -50,18 +50,18 @@ export default function KeepWriting(props) {
             <div className="block-section">
               <div className="left-section">
                     
-                <Emblem name={props.name}/>
+                <Emblem name={props.data['id']}/>
               </div>
 
               <div className="dot-section"></div>
 
               <div className="right-section">
-                
-              <div className="right-section">
-                
-              <div className="right-section">
-                
-                </div>
+                  
+                <div className="right-section">
+                  
+                  <div className="right-section">
+                  
+                  </div>
                 </div>
               </div>
             </div>

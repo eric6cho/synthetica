@@ -7,9 +7,9 @@ export default function SearchForSelf(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
     
         <div className="image">
           <img src='images/pexels-aaron-ulsh-2860705.jpg' alt='article'/>
@@ -62,8 +62,8 @@ export default function SearchForSelf(props) {
                 </div>
 
                 <div className="graphics-section">
-                  <Emblem name={props.name}/>
-                  <Emblem name={props.name}/>
+                  <Emblem name={props.data['id']}/>
+                  <Emblem name={props.data['id']}/>
                 </div>
               </div>
             </div>

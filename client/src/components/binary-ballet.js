@@ -6,9 +6,9 @@ export default function BinaryBallet(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
 
         <div className='article-container'>
 
@@ -24,7 +24,7 @@ export default function BinaryBallet(props) {
                     <div className="block"></div>
                     <div className="block"></div>
                     <div className="block"></div>
-                    <Emblem name={props.name}/>
+                    <Emblem name={props.data['id']}/>
                     <div className="block"></div>
                     <div className="block"></div>
                     <div className="block"></div>

@@ -6,9 +6,9 @@ export default function EdgeOfTheSea(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
     
         <div className="image-container">
           <div className='image'>
@@ -22,20 +22,20 @@ export default function EdgeOfTheSea(props) {
 
                 <div className="graphics-section mobile">
 
-                  <Emblem name={props.name}/>
+                  <Emblem name={props.data['id']}/>
                
                 </div>
 
                 <div className="graphics-section">
 
-                  <Emblem name={props.name}/>
+                  <Emblem name={props.data['id']}/>
                   <div className="block">
                     <div className="inner"></div>
                     <div className="inner"></div>
                     <div className="inner"></div>
                   </div>
 
-                  <Emblem name={props.name}/>
+                  <Emblem name={props.data['id']}/>
 
                 
                 

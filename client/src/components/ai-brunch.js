@@ -6,9 +6,9 @@ export default function AIBrunch(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
 
         <div className="article-container">
 
@@ -52,7 +52,7 @@ export default function AIBrunch(props) {
                 <div className="block">
                   <div className="inner"></div>
                 </div>
-                <Emblem name={props.name}/>
+                <Emblem name={props.data['id']}/>
               </div>
             </div>
             <div className="image">

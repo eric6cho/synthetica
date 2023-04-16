@@ -4,32 +4,32 @@ export default function DivisionScreen(props) {
 
   const getComponent = () => {
 
+    const getLinks = part =>
+    Object.keys(props.allData[part]).map(key=>
+      props.allData[part][key]['nav'] &&
+      <a href={'#'+props.allData[part][key]['id']}><h4>{key}</h4></a>
+    );
+
     let component = 
       <div className='component division-screen'>
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
         <div className="image">
-          <img src={props.imageSecondary} alt='article'/>
+          <img src={props.data['images'][1]} alt='article'/>
           <div className="image-overlay">
             <div className="image-container">
               <div className="image">
-                <img src={props.imagePrimary} alt='article'/>
+                <img src={props.data['images'][0]} alt='article'/>
                 <div className="image-overlay"></div>
               </div>
             </div>
             <div className="link-row">
-              <a href={'#'+props.id[0]}><h4>I</h4></a>
-              <a href={'#'+props.id[1]}><h4>II</h4></a>
-              <a href={'#'+props.id[2]}><h4>III</h4></a>
-              <a href={'#'+props.id[3]}><h4>IV</h4></a>
-              <a href={'#'+props.id[4]}><h4>V</h4></a>
+              
+              {getLinks('Part I')}
             </div>
-            <h3 className='title'>{props.title}</h3>
+            <h3 className='title'>{props.data['title']}</h3>
             <div className="link-row">
-              <a href={'#'+props.id[5]}><h4>VI</h4></a>
-              <a href={'#'+props.id[6]}><h4>VII</h4></a>
-              <a href={'#'+props.id[7]}><h4>VIII</h4></a>
-              <a href={'#'+props.id[8]}><h4>IX</h4></a>
-              <a href={'#'+props.id[9]}><h4>X</h4></a>
+              
+              {getLinks('Part I')}
             </div>
           </div>
         </div>   
@@ -39,4 +39,4 @@ export default function DivisionScreen(props) {
   }
 
   return getComponent();
-}
+} 

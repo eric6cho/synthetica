@@ -7,9 +7,9 @@ export default function HalfSteel(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
 
         <div className="main-image">
           <div className="image">
@@ -46,7 +46,7 @@ export default function HalfSteel(props) {
 
                   <div className="graphics-section">
                     <div className="inner-block">
-                      <Emblem name={props.name}/>
+                      <Emblem name={props.data['id']}/>
                       <div className="left">
                         <div className="gradient"></div>
                         <div className="dot-section">

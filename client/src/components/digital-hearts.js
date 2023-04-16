@@ -7,9 +7,9 @@ export default function DigitalHearts(props) {
   const getComponent = () => {
 
     let component = 
-      <div className={'component '+props.name}>
+      <div className={'component '+props.data['id']}>
 
-        <div className='id-marker' id={props.name}></div>
+        <div className='id-marker' id={props.data['id']}></div>
     
         <div className="image-container">
           <div className="image">
@@ -41,7 +41,7 @@ export default function DigitalHearts(props) {
             <div className="poem-circle blue">
               <div className="graphics-section">
                   
-                <Emblem name={props.name}/>
+                <Emblem name={props.data['id']}/>
               </div>
             </div>
             <div className="poem-circle blue">
