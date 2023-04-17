@@ -1,50 +1,29 @@
 @import "mixins/mixins.scss";
-@include defaultStyling();
 
-.App{
+@include custom-scrollbar();
+
+html {
+  height: 100%;
+}
+
+body {
   position: relative;
+  margin: 0;
+  padding: 0;
+  background: rgb(235,235,235);
   height:100%;
-  
-  .image{
-    @include transition();
-    position: relative;
-    overflow: hidden;
-    height:100%;
-    width: 100%;
+  width: 100%;
+  @include defaultText(); 
+  @include defaultImageStyling();
 
-    img{
-      background: rgb(30,30,30);
-      position: absolute;
-      height: 102%;
-      width: 102%;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      object-fit: cover;
-    }
-    
-    .image-overlay{
-      @include transition();
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      z-index: 2;
-      background: rgba(255, 219, 120, 0);
-      display: flex;
-      justify-content: center;
-      align-items: center;
+  #root{
+    height:100%;
+    width:100%;
+
+    .App{
+      position: relative;
+      height:100%;
+      width:100%;
     }
   }
-
-
-}
-
-
-  
-@include media-md{
-  
-}
-
-@include media-xl{
-  
 }

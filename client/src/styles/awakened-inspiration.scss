@@ -2,16 +2,15 @@
 
 .awakened-inspiration{
   &.component{
+    @include transition();
     position: relative;
     width:100%;
     min-height:120vh;
     background: rgb(10,10,10);
     display:flex;
     flex-direction: column;
-    
     align-items: center;
     position: relative;
-
     min-height:auto;
     height:2000px;
    
@@ -21,6 +20,7 @@
     }
 
     .image-grid{
+      @include transition();
       padding:2px 2px 2px 72px;
       display: flex;
       position: relative;
@@ -30,20 +30,24 @@
       margin: calc(15vh + 225px) 0 325px;
 
       .image-col{
+        @include transition();
         display: flex;
         flex-direction: column;
       
         .image-container{
+          @include transition();
           width: 114px;
           height: 114px; 
           
           .image-overlay{
+            @include transition();
             background: rgba(0, 0, 0, 0);
           }
         }
       }
       
       .image-container{
+        @include transition();
         width: 350px;
         height: 342px; 
         margin: 2px;
@@ -55,11 +59,11 @@
     }
 
     .main-image{
+      @include transition();
       position: absolute;
       top:15vh;
       left: 50%;
       transform: translate(-50%, -0%);
-
       max-height: 800px;
       height: 800px;
       width: 100%; 
@@ -71,6 +75,7 @@
     }
 
     .title-section{
+      @include transition();
       height:70px;
       width:350px;
       background: rgb(245,245,245);
@@ -84,6 +89,7 @@
       padding:20px 20px 20px 15px;
 
       .title{
+        @include transition();
         width:300px;
         font-size: 14px;
         letter-spacing: 5px;
@@ -95,32 +101,31 @@
       }
     }
 
-
     .emblem{
       @include emblemColor(rgb(100,100,100));
     }
 
-
     .dot-lg,.line-lg{
+      @include transition();
       min-width:0px;
       width:0px;
       height:0px;
     }
 
     .line-lg{
+      @include transition();
       width: 0px;
-
     }
     
-  
-
     .story-section{
+      @include transition();
       width: 440px;
       max-width: 100%;
       padding:20px;
       z-index: 10;
 
       p{
+        @include transition();
         font-size: 12px;
         line-height: 14px;
         text-align: right;
@@ -140,7 +145,6 @@
 @include media-md{
   .awakened-inspiration{
     &.component{
-      
       min-height:150vh;
      
       .image-grid{ 
@@ -178,7 +182,6 @@
       .line-lg{
         width: 100px;
         margin-right:auto;
-  
       }
 
       .dot-section{
@@ -197,12 +200,8 @@
 @include media-xl{
   .awakened-inspiration{
     &.component{
-
-      
       min-height:200vh;
       height: 200vh;
-
-
       flex-direction: row;
       justify-content: center;
       

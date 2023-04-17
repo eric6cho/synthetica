@@ -2,6 +2,7 @@
 
 .ascii-art{
   &.component{
+    @include transition();
     min-height:1500px;
     position: relative;
     display: flex;
@@ -15,6 +16,7 @@
     }
 
     .main-image-container{
+      @include transition();
       position: absolute;
       width:100%;
       height:100%;
@@ -28,6 +30,7 @@
     }
 
     pre {
+      @include transition();
       font-size: 5px;
       font-weight: 700;
       font-family: 'Courier New', Courier, monospace;
@@ -37,10 +40,12 @@
     }
 
     .small pre{
+      @include transition();
       font-size: 7px;
     }
 
     .content-section{
+      @include transition();
       width:100%;
       max-width: 560px;
       position: relative;
@@ -49,28 +54,29 @@
       padding:200px 30px 50px;
       
       .title-section{
+        @include transition();
         padding:0 10px;
         display:flex;
         align-items: center;
         margin-bottom: 30px;
         
         h3{
-          //width:350px;
+          @include transition();
           margin-right: auto;
           color: white;
           font-size: 16px;
         }
 
         .graphic-section{
+          @include transition();
           height:50px;
           width:100%;
-
           border-radius: 50%;
-          //border:1px solid rgb(200,200,200);
           position:relative;
           display: flex;
         
           .left-section{
+            @include transition();
             width:100%;
             height:100%;
             margin-right: 5px;
@@ -79,15 +85,14 @@
             border: 2px solid rgb(217, 230, 235);
 
             .inner{
+              @include transition();
               border: 2px solid rgb(217, 230, 235);
-              //background: rgba(255,255,255,0.5);
               width:100%;
               height:100%;
               border-radius: 0 1000px 1000px 0;
               display: flex;
               align-items: center;
               padding-left: 10px;
-
             }
           }
 
@@ -95,13 +100,14 @@
             @include emblemColor(rgb(217, 230, 235));
           }
         }
-        
       }  
 
       .description-section{
+        @include transition();
         padding:0 10px;
 
         p{
+          @include transition();
           font-size: 13px;
           text-align: justify;
           margin-bottom: 30px;
@@ -110,6 +116,7 @@
       }
 
       .grid-section{
+        @include transition();
         width:100%;
 
         .grid-image-outer{
@@ -136,6 +143,7 @@
         }
 
         .grid-image{
+          @include transition();
           border:1px solid rgb(200,200,200);
           overflow: hidden;
           margin:auto;
@@ -147,11 +155,13 @@
           justify-content: center;
 
           pre{
+            @include transition();
             font-size: 1.5px;
           }
 
           &.small{
             pre{
+              @include transition();
               font-size: 2px;
             }
           }
@@ -160,11 +170,13 @@
     }
 
     .dialog-container{
+      @include transition();
       width:100%;
       max-width: 560px;
       padding:0 30px 200px;
 
       .dialog-box{
+        @include transition();
         position: relative;
         box-shadow: 3px 6px 24px -8px rgba(0,0,0,0.75);
         background:rgb(200,200,200);
@@ -176,6 +188,7 @@
         border: 2px solid rgba(0,39,255,1);
       
         .dialog-title{
+          @include transition();
           height:30px;
           padding:0 15px;
           width:100%;
@@ -184,6 +197,7 @@
           align-items: center;
           
           h4{
+            @include transition();
             font-family: "Segoe UI", Arial, sans-serif;
             font-weight: 600;
             margin: -2px auto 0px 0;
@@ -196,11 +210,13 @@
         }
 
         .dialog-content{
+          @include transition();
           display: flex;
           flex-direction: column;
           justify-content: center;
 
           .image{
+            @include transition();
             width:calc(100vw - 120px);
             max-width: 480px;
             max-height: 480px;
@@ -210,11 +226,11 @@
             
             .image-overlay{
               background: rgba(121, 9, 121, 0.322);
-        
             }
           }
 
           p{
+            @include transition();
             width:100%;
             padding:30px;
             text-align: justify;
@@ -228,7 +244,6 @@
 @include media-md{    
   .ascii-art{
     &.component{
-
       pre {
         font-size: 8px;
       }
@@ -248,14 +263,8 @@
           }
 
           .graphic-section{
-            //width:100%;
-            //border-radius: 50% 1000px 1000px 50%;
-            //border:1px solid rgb(200,200,200);
             position:relative;
             display: flex;
-          
-            .circle-section{
-            }
           }          
         }  
 
@@ -301,13 +310,13 @@
       .content-section{
         width:500px;
         padding:0;
-       
         
         .title-section{    
           h3{
             font-size: 22px;
           }
         }
+
         .description-section{
           padding:0 10px;
         }

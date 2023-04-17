@@ -46,7 +46,6 @@
       width: 90vw;
       height:auto;
       background: rgb(245,245,245);
-      
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -55,17 +54,14 @@
       position: relative;
 
       .graphics-section{
-
         display:flex;
         height:140px;
         width:auto;
         justify-content: center;
         align-items: center;
         padding:0 15px;
-        //border: 2px solid rgb(180,100,100);
-        background: rgb(200, 80, 80);
+        background: rgb(180,180,180);
         margin:5px;
-      
       
         .inner-section{
           display:flex;
@@ -75,25 +71,19 @@
           width:70px;
           height:90px;
           border: 2px solid rgb(40,40,40);
-        //border: 2px solid rgb(180,100,100);
         }
+
         .emblem{
-          
           margin-bottom: 1px;
-          //@include emblemColor(rgb(180,100,100));
           @include emblemColor(rgb(40,40,40));
-       
         }
 
         h4{
-          //color: rgb(180,100,100);
-          color:rgb(0,0,0);
+          color:black;
           font-size: 14px;
           font-weight: 700;
           font-family: 'Courier New', Courier, monospace;
-
         }
-
       }
 
       .story-container{
@@ -102,7 +92,6 @@
         display: flex;
         flex-direction: column;
         justify-content:space-between;
-
 
         .story-section{
           max-width: 480px;
@@ -113,7 +102,6 @@
           margin:auto;
           position: relative;
 
-
           p{
             font-size: 12px;
             line-height: 16px;
@@ -122,16 +110,14 @@
             font-family: 'Courier New', Courier, monospace;
             color:black;
           }
-
         }
       }
-      .picture-section{
-        
+
+      .picture-section{  
         display:flex;
         flex-direction: column;
         background: rgb(40,40,40);
         padding:calc(45vw - 150px) 0;
-
 
         .picture-grid{
           margin:auto;
@@ -145,13 +131,9 @@
             background: rgb(180,180,180);
             vertical-align: top;
             
-
             .image-overlay{
               background: rgba(0,0,0,0);
             }
-
-
-
 
             &:last-child{
               background: none;
@@ -166,10 +148,7 @@
               }
             }
           }
-
-
         }
-
       }
     }
   }
@@ -203,18 +182,13 @@
         flex-direction: row;
         margin: 50vw auto 50vw;
 
-
-
         .graphics-section{
           height:130px;
         
-      
           .inner-section{
-            width:90px;
-           
+            width:90px; 
           }
         }
-
 
         .story-container{
           .story-section{
@@ -223,18 +197,13 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-
           }
         }
  
-
         .picture-section{
-          //background: rgb(30,30,30);
           padding:30px;
           
-          
           .picture-grid{
-
             width: 100%;
             height: 100%;
             display: flex;
@@ -245,12 +214,8 @@
               height: 130px;
               width: 130px; 
               margin: 5px;
-
             }
           }
-
-          
-
         }
       }
     }
@@ -265,12 +230,10 @@
       height: 2000px;
       flex-direction: row;
 
-
       .id-marker{
         top:500px;
       }
-  
-      
+   
       .title-section{
         width:400px;
         height: 100%;
@@ -283,7 +246,6 @@
         background: rgba(0,0,0,0.7);
         @include blur(5);
         
-
         .title{
           font-size: 190px;
           line-height: 180px;
@@ -304,14 +266,11 @@
 
         .story-section{
           width: 100%;
-          //padding: 20px 50px 20px;
-
         }
 
         .picture-section{
           display: flex;
           flex-direction: column;
-          //background: rgb(30,30,30);
           padding:30px;
 
           .image-container{
@@ -329,4 +288,3 @@
     }
   }
 }
-

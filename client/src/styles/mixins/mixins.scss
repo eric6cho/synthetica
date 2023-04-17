@@ -1,7 +1,26 @@
-@mixin themes(){
-  :root {
-    --background: rgb(235,235,235);
-  }
+
+@mixin media-xs {
+  @media (max-width: 576px) { @content; }
+}
+
+@mixin media-sm {
+  @media (min-width: 576px) { @content; }
+}
+
+@mixin media-md {
+  @media (min-width: 768px) { @content; }
+}
+
+@mixin media-lg {
+  @media (min-width: 992px) { @content; }
+}
+
+@mixin media-xl {
+  @media (min-width: 1200px) { @content; }
+}
+
+@mixin media-xxl {
+  @media (min-width: 1400px) { @content; }
 }
 
 @mixin custom-scrollbar() {
@@ -18,39 +37,6 @@
     
     &:hover{
       background: rgba(255,255,255,0.7);
-    }
-  }
-}
-
-@mixin defaultStyling() {
-    
-  @include custom-scrollbar();
-  @include themes();
-
-  html {
-    height: 100%;
-  }
-
-  body {
-    @include defaultText(); 
-    position: relative;
-    margin: 0;
-    padding: 0;
-    background: var(--background);
-    height:100%;
-    width: 100%;
-    
-
-    #root{
-      height:100%;
-      width:100%;
-
-      .App{
-        position: relative;
-        height:100%;
-        width:100%;
-        //overflow-x: hidden;
-      }
     }
   }
 }
@@ -78,7 +64,6 @@
     font-weight: 600;
     line-height: 42px;
     letter-spacing: 5px;
-    text-transform: uppercase;
   }
 
   h2{
@@ -110,58 +95,8 @@
   }
 }
 
-@mixin media-xs {
-  @media (max-width: 576px) { @content; }
-}
-
-@mixin media-sm {
-  @media (min-width: 576px) { @content; }
-}
-
-@mixin media-md {
-  @media (min-width: 768px) { @content; }
-}
-
-@mixin media-lg {
-  @media (min-width: 992px) { @content; }
-}
-
-@mixin media-xl {
-  @media (min-width: 1200px) { @content; }
-}
-
-@mixin media-xxl {
-  @media (min-width: 1400px) { @content; }
-}
-
 @mixin transition ($duration:0.2) {
   transition-duration: $duration + unquote("s");
-}
-
-@mixin button() {
-  background: rgba(0,0,0,0.1);
-  border: 2px solid rgba(0,0,0,0);
-  border-radius: 6px;
-  padding:15px 30px;
-  cursor: pointer;
-  transition-duration: 0.2s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover{
-    background: rgba(0,0,0,0.5);
-  }
-  
-  &.disabled{
-    background: rgba(0,0,0,0);
-    border: 2px solid rgba(255,255,255,0.1);
-    cursor: default;
-    
-    &:hover{
-      background: rgba(0,0,0,0);
-    }
-  }
 }
 
 @mixin blur($blur:15){
@@ -169,8 +104,7 @@
   backdrop-filter: blur($blur + unquote("px"));
 };
 
-
-@mixin image(){
+@mixin defaultImageStyling(){
   
   .image{
     @include transition();
@@ -204,12 +138,8 @@
   }
 }
 
-
 @mixin emblemColor($color){
-  
   .center{
-
-
     .dot,.line{
       background: $color;
     }
@@ -217,6 +147,5 @@
     .circle,.square{
       border-color: $color;
     }
- 
   }
 }

@@ -286,11 +286,9 @@ export default function App() {
 
   let storyList = [];
 
-  Object.values(AllData).forEach(part=>{
+  Object.values(AllData).forEach(part=>
     Object.values (part).forEach(chapter=>  
-      storyList.push(ComponentData[chapter['title']])
-    )
-  })
+      storyList.push(ComponentData[chapter['title']])));
 
   const getComponent = () => {
   
@@ -305,12 +303,7 @@ export default function App() {
   return getComponent();
 }
 
-
 /*
-
-clean up components stylesheets
-
-clean up mixins stylesheets
 
 clean up components
 
