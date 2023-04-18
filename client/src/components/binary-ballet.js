@@ -7,15 +7,10 @@ export default function BinaryBallet(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-
         <div className='article-container'>
-
           <div className='title-section'>
-            
             <h3 className='title'>Binary Ballet</h3>
-
             <div className="image-container">
               <div className="image">
                 <img src='images/pexels-javon-swaby-35873201.jpg' alt='article'/>
@@ -32,32 +27,24 @@ export default function BinaryBallet(props) {
                 </div>
               </div>
             </div>
-
             <p className='subtitle'>     
               01000010 01101001 01101110 01100001 01110010 01111001 00100000 
               01000010 01100001 01101100 01101100 01100101 01110100
             </p>
           </div>
-
           <div className="article-section">
-
             <div className="image-container">
               <div className="image">
                 <img src='images/pexels-irina-iriser-1005711.jpg' alt='article'/>
                 <div className="image-overlay"></div>
               </div>              
             </div>
-
             <div className="story-section">
-      
               <div className='binary-section'>
                 <StoryBinary/>
               </div>
-
               <div className='english-section'>
-
                 <StoryEnglish/> 
-
                 <div className='dot-section'>
                   <div className="dot-row">
                     <div className='dot'></div>

@@ -1,4 +1,3 @@
-
 import './../styles/emblem.scss';
 
 export default function Emblem(props) {
@@ -13,7 +12,6 @@ export default function Emblem(props) {
           <div className="square s-1"></div>
         </>;
 
-    
     if(props.name==='part-i')
       emblem = 
         <>

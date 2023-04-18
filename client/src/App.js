@@ -1,5 +1,4 @@
 import './styles/main.scss';
-
 import Nav from "./components/nav";
 import Home from "./components/home";
 import Contents from "./components/contents";
@@ -302,13 +301,3 @@ export default function App() {
 
   return getComponent();
 }
-
-/*
-
-clean up components
-
-clean up app component
-
-clean up backend
-
-*/

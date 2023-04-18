@@ -1,5 +1,4 @@
 import './../styles/digital-hearts.scss';
-
 import Emblem from "./emblem";
 
 export default function DigitalHearts(props) {
@@ -8,18 +7,13 @@ export default function DigitalHearts(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-    
         <div className="image-container">
           <div className="image">
             <img src='images/pexels-sami-anas-53448501.jpg' alt='article'/>
-            <div className="image-overlay">
-              
-            </div>
+            <div className="image-overlay"></div>
           </div>
         </div>
-        
         <div className="poem-container">
           <div className="grid">
             <div className="poem-circle white"></div>
@@ -40,7 +34,6 @@ export default function DigitalHearts(props) {
             </div>
             <div className="poem-circle blue">
               <div className="graphics-section">
-                  
                 <Emblem name={props.data['id']}/>
               </div>
             </div>

@@ -7,13 +7,9 @@ export default function AIBrunch(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-
         <div className="article-container">
-
-          <div className='article-section'>
-            
+          <div className='article-section'>  
             <div className='dot-section'>
               <div className='dot-row'>
                 <div className="line"></div>
@@ -29,17 +25,13 @@ export default function AIBrunch(props) {
                 <div className="line sm"></div>
               </div>
             </div>
-
             <div className='title-section'>
               <h3 className='title'>The AI at Brunch </h3> 
             </div>
-
             <div className="story-section">
               <Story/>
             </div>
-
           </div>
-
           <div className='image-section'>
             <div className="image-underlay">  
               <div className="graphics-section">
@@ -57,13 +49,9 @@ export default function AIBrunch(props) {
             </div>
             <div className="image">
               <img src='images/pexels-jaysen-scott-1858488.jpg' alt='article'/>
-              
-              <div className="image-overlay">
-               
-              </div>
+              <div className="image-overlay"></div>
             </div>
           </div>
-
         </div>
       </div>;
 

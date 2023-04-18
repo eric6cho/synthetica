@@ -1,5 +1,4 @@
 import './../styles/search-for-self.scss';
-
 import Emblem from "./emblem";
 
 export default function SearchForSelf(props) {
@@ -8,21 +7,15 @@ export default function SearchForSelf(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-    
         <div className="image">
           <img src='images/pexels-aaron-ulsh-2860705.jpg' alt='article'/>
           <div className="image-overlay">
-
             <div className="article-container">  
-                
               <div className='story-section'>
-
                 <div className='story-container'>
                   <Story/>
                 </div>
-
                 <div className='dot-section'>
                   <div className="dot-row">
                     <div className="dot"></div>
@@ -36,31 +29,26 @@ export default function SearchForSelf(props) {
                     <div className="dot"></div>
                   </div>
                 </div>
-
               </div>
               <div className='image-section'>
-                
                 <div className="image-container">
                   <div className="image">
                     <img src='images/pexels-tima-miroshnichenko-5973770.jpg' alt='article'/>
                     <div className="image-overlay"></div>
                   </div>
                 </div> 
-
                 <div className="image-container">
                   <div className="image">
                     <img src='images/pexels-tima-miroshnichenko-59737701.jpg' alt='article'/>
                     <div className="image-overlay"></div>
                   </div> 
                 </div>
-                
                 <div className='title-section'>
                   <h3 className='title'>The</h3> 
                   <h3 className='title'>Search</h3> 
                   <h3 className='title'>For</h3> 
                   <h3 className='title'>Self </h3> 
                 </div>
-
                 <div className="graphics-section">
                   <Emblem name={props.data['id']}/>
                   <Emblem name={props.data['id']}/>

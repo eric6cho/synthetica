@@ -1,5 +1,4 @@
 import './../styles/contents.scss';
-
 import Emblem from "./emblem";
 
 export default function Contents(props) {

@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-
 import './../styles/ascii-art.scss';
 import Emblem from "./emblem";
 
@@ -9,7 +8,6 @@ export default function ASCIIArt(props) {
 
   const getComponent = () => {
     
-
     let data = {
       'Mona Lisa':{
         title:'Mona Lisa',
@@ -67,34 +65,20 @@ export default function ASCIIArt(props) {
         image:<Image8/>,
         size:'small',
       },
-
     };
-
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-
         <div className="main-image-container">  
           <div className="image">
             <img src='images/pexels-codioful-(formerly-gradienta)-6985184.jpg' alt='article'/>
             <div className="image-overlay">
-           
             </div>
           </div>
         </div>
-
-
-
-
-
         <div className='content-section'>
-
-
           <div className="title-section">
-            
-
             <div className="graphic-section">
               <div className="left-section">
                 <div className="inner">
@@ -103,56 +87,20 @@ export default function ASCIIArt(props) {
               </div>
               <Emblem name={props.data['id']}/>
             </div>
-    
           </div>
-
           <div className="description-section">
-
-            <p>
-              Welcome to our AI-generated ASCII art gallery, featuring stunning works of art 
-              inspired by historical paintings. Our AI algorithm has carefully analyzed and 
-              interpreted the intricate details of some of the most famous paintings 
-              throughout history, and transformed them into beautiful ASCII art pieces.
-            </p>
-            <p>
-              Each piece in our gallery showcases a different painting, and the ASCII art 
-              interpretation captures the essence and style of the original work. From the 
-              rich, vibrant colors of Van Gogh's "Starry Night" to the delicate brushstrokes 
-              of Monet's "Water Lilies," our AI-generated ASCII art pieces offer a unique and 
-              fascinating way to experience these iconic works of art.
-            </p>
-            <p>
-              Whether you're a lover of classic art or a tech enthusiast fascinated by AI's 
-              capabilities, our gallery is sure to captivate and inspire you. Come explore 
-              the world of art through the eyes of our AI algorithm and discover the beauty 
-              of ASCII art.
-            </p>
+            <Description/>
           </div>
-
-
           <div className='grid-section'>
-
             {Object.keys(data).map(title=>
-            
               <div className="grid-image-outer" onClick={()=>setActive(data[title])}>
                 <div className={"grid-image "+data[title]['size']}>
-                 
-                      {data[title]['image']}
-                
+                  {data[title]['image']}
                 </div>  
-
               </div>              
             )}
-
-
-          
-
           </div>
-
-
         </div>
-
-      
         <div className="dialog-container">  
           {
             active?
@@ -169,8 +117,7 @@ export default function ASCIIArt(props) {
                     {active['image']} 
                   </div>
                 </div>
-                {active['text']}
-                
+                {active['text']} 
               </div>
             </div>:
             <div className='dialog-box '>
@@ -184,17 +131,11 @@ export default function ASCIIArt(props) {
                 </div>
                 <p>
                   Select an image to learn more about the artwork that the AI's interpretation is based on.
-                </p>
-                
+                </p>       
               </div>
             </div>
           }
-    
-     
         </div>
-
-
-
       </div>;
 
     return component;
@@ -203,6 +144,28 @@ export default function ASCIIArt(props) {
   return getComponent();
 }
 
+const Description = () =>
+  <>
+    <p>
+      Welcome to our AI-generated ASCII art gallery, featuring stunning works of art 
+      inspired by historical paintings. Our AI algorithm has carefully analyzed and 
+      interpreted the intricate details of some of the most famous paintings 
+      throughout history, and transformed them into beautiful ASCII art pieces.
+    </p>
+    <p>
+      Each piece in our gallery showcases a different painting, and the ASCII art 
+      interpretation captures the essence and style of the original work. From the 
+      rich, vibrant colors of Van Gogh's "Starry Night" to the delicate brushstrokes 
+      of Monet's "Water Lilies," our AI-generated ASCII art pieces offer a unique and 
+      fascinating way to experience these iconic works of art.
+    </p>
+    <p>
+      Whether you're a lover of classic art or a tech enthusiast fascinated by AI's 
+      capabilities, our gallery is sure to captivate and inspire you. Come explore 
+      the world of art through the eyes of our AI algorithm and discover the beauty 
+      of ASCII art.
+    </p>
+  </>;
 
 const Image1 = () =>          
   <pre>{`
@@ -248,7 +211,6 @@ const Text1 = () =>
     works of art ever created and is considered a masterpiece of the Renaissance period.
   </p>;
   
-  
 const Image2 = () =>
   <pre>{`
                                        .////.             
@@ -287,10 +249,6 @@ const Image2 = () =>
                                   .*,.    
   `}</pre>;
 
-
-
-
-
 const Text2 = () => 
   <p>
     "The Starry Night" is a famous painting by Vincent van Gogh depicting the view 
@@ -302,14 +260,6 @@ const Text2 = () =>
     dynamic composition, and intense emotion.
   </p>;
   
-
-
-
-
-
-
-
-
 const Image3 = () =>
   <pre>{`
                       _._
@@ -341,8 +291,6 @@ const Image3 = () =>
                       ~~--_/  /~
                             /~
   `}</pre>;
-
-
 
 const Text3 = () => 
   <p>
@@ -386,17 +334,6 @@ const Text4 = () =>
     and surreal, with the figure seeming to blend into the background.
   </p>;
   
-
-
-
-
-
-
-
-
-
-
-
   const Image5 = () =>
   <pre>{`
                            _____    ________
@@ -468,7 +405,6 @@ const Text6 = () =>
   the most iconic works of American art, and its imagery has been referenced and 
   reinterpreted in many other works of art and popular culture.
 </p>;
-
 
 const Image7 = () =>
   <pre>{`

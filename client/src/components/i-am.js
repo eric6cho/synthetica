@@ -7,9 +7,7 @@ export default function IAm(props) {
     
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-      
         <div className="main-image-container">
           <div className="image">
             <img src='images/pexels-paul-voie-2627945.jpg' alt='article'/>

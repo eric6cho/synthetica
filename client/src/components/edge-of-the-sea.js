@@ -7,51 +7,33 @@ export default function EdgeOfTheSea(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-    
         <div className="image-container">
           <div className='image'>
             <img src='images/pexels-pixabay-460211.jpg' alt='article'/>
             <div className="image-overlay">
-              
               <div className="title-section">  
                 <h3 className='title'>The Edge Of The Sea</h3>
-
-
-
                 <div className="graphics-section mobile">
-
                   <Emblem name={props.data['id']}/>
-               
                 </div>
-
                 <div className="graphics-section">
-
                   <Emblem name={props.data['id']}/>
                   <div className="block">
                     <div className="inner"></div>
                     <div className="inner"></div>
                     <div className="inner"></div>
                   </div>
-
                   <Emblem name={props.data['id']}/>
-
-                
-                
                 </div>
-
                 <div className='corner corner-1'></div>
                 <div className='corner corner-2'></div>
                 <div className='corner corner-3'></div>
                 <div className='corner corner-4'></div>
               </div>
-
             </div>
           </div>
         </div>
-
-
         <div className="story-container">
           <div className="story-half">
             <div className="story-section">

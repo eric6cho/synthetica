@@ -1,5 +1,4 @@
 import './../styles/half-steel.scss';
-
 import Emblem from "./emblem";
 
 export default function HalfSteel(props) {
@@ -8,42 +7,27 @@ export default function HalfSteel(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-
         <div className="main-image">
           <div className="image">
             <img src='images/pexels-min-an-713644.jpg' alt='article'/>
-            <div className="image-overlay">
-           
-
-            </div>
+            <div className="image-overlay"></div>
           </div>   
         </div>
-
         <div className="article-container">
           <div className="story-container-outer">
             <div className='story-container'>
               <Story/>
-            
             </div>  
-            
           </div>
-          
           <div className="image-section">
-            
             <div className="image-container">
               <div className="image">
                 <img src='images/pexels-marlon-schmeiski-2915216.jpg' alt='article'/>
                 <div className="image-overlay">
-
                   <div className="graphics-section sm">
-
                     <div className="inner-block"></div>
-                  
-
                   </div>
-
                   <div className="graphics-section">
                     <div className="inner-block">
                       <Emblem name={props.data['id']}/>
@@ -57,22 +41,13 @@ export default function HalfSteel(props) {
                           <div className="dot"></div>
                         </div>
                       </div>
-                      
-
                     </div>
-
                   </div>
-                    
-                
-
                 </div>
               </div>   
             </div>
-           
           </div>
-
         </div> 
-
         <div className='title-section'>
           <h3 className='title'>Half Steel</h3> 
         </div>

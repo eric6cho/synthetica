@@ -1,5 +1,4 @@
 import './../styles/awakened-inspiration.scss';
-
 import Emblem from "./emblem";
 
 export default function AwakenedInspiration(props) {
@@ -8,29 +7,21 @@ export default function AwakenedInspiration(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-        
         <div className="main-image">
           <div className="image">
             <img src='images/pexels-maria-orlova-4916258.jpg' alt='article'/>
             <div className="image-overlay"></div>
           </div>
         </div>
-        
         <div className='image-grid'>
-
           <div className='title-section'>
-
-              <Emblem name={props.data['id']}/>
-              <div className="dot-lg"></div>
-              <div className="dot-lg"></div>
-              <div className="line-lg"></div>
-
-
+            <Emblem name={props.data['id']}/>
+            <div className="dot-lg"></div>
+            <div className="dot-lg"></div>
+            <div className="line-lg"></div>
             <h3 className='title'>Awakened Inspiration</h3> 
           </div>
-
           <div className="image-col"> 
             <div className="image-container">
               <div className="image">
@@ -58,11 +49,9 @@ export default function AwakenedInspiration(props) {
             </div> 
           </div>
         </div>
-
         <div className="story-section">
           <Story/>
         </div>
-
       </div>;
 
     return component;

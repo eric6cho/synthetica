@@ -6,9 +6,7 @@ export default function Home(props) {
 
     let component = 
       <div className='component home'>
-        
         <div className='id-marker' id={'home'}></div>
-
         <div className="image">
           <img src='images/pexels-berkay-i̇lhan-4412789.jpg' alt='article'/>
           <div className="image-overlay"></div>

@@ -22,13 +22,11 @@ export default function DivisionScreen(props) {
                 <div className="image-overlay"></div>
               </div>
             </div>
-            <div className="link-row">
-              
+            <div className="link-row">      
               {getLinks('Part I')}
             </div>
             <h3 className='title'>{props.data['title']}</h3>
-            <div className="link-row">
-              
+            <div className="link-row">      
               {getLinks('Part I')}
             </div>
           </div>

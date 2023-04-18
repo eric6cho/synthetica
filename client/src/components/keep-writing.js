@@ -1,5 +1,4 @@
 import './../styles/keep-writing.scss';
-
 import Emblem from "./emblem";
 
 export default function KeepWriting(props) {
@@ -8,21 +7,15 @@ export default function KeepWriting(props) {
 
     let component = 
       <div className={'component '+props.data['id']}>
-
         <div className='id-marker' id={props.data['id']}></div>
-    
         <div className="image">
           <img src='images/pexels-gianluca-grisenti-4215113.jpg' alt='article'/>
           <div className="image-overlay"></div>
         </div>
-
         <div className='article-container'>
-
           <div className='title-section'>
             <h3 className='title'>Keep Writing.</h3> 
           </div>
-
-
           <div className='dot-section'> 
             <div className='dot-row'>
               <div className="line"></div>
@@ -38,35 +31,24 @@ export default function KeepWriting(props) {
               <div className="dot"></div>
             </div>    
           </div>
-
           <div className="story-container">
             <div className="story-section">
               <Story/>
             </div>
           </div>
-
           <div className="graphics-section">
             <div className="line"></div>
             <div className="block-section">
               <div className="left-section">
-                    
                 <Emblem name={props.data['id']}/>
               </div>
-
               <div className="dot-section"></div>
-
               <div className="right-section">
-                  
                 <div className="right-section">
-                  
-                  <div className="right-section">
-                  
-                  </div>
+                  <div className="right-section"></div>
                 </div>
               </div>
             </div>
-            
-            
           </div>
         </div>
       </div>;
