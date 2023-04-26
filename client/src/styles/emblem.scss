@@ -579,22 +579,25 @@
             left:-13px;
           }
           &.s-2{
-            width:20px;
-            height:20px;
-            top:-9px;
-            left:-9px;
+            width:22px;
+            height:22px;
+            top:-10px;
+            left:-10px;
+            border-radius: 4px;
           }
           &.s-3{
-            width:12px;
-            height:12px;
-            top:-5px;
-            left:-5px;
+            width:16px;
+            height:16px;
+            top:-7px;
+            left:-7px;
+            border-radius: 6px;
           }
           &.s-4{
-            width:4px;
-            height:4px;
-            top:-1px;
-            left:-1px;
+            width:10px;
+            height:10px;
+            top:-4px;
+            left:-4px;
+            border-radius: 5px;
           }
         }
       }
