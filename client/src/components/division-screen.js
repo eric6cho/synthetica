@@ -27,7 +27,7 @@ export default function DivisionScreen(props) {
             </div>
             <h3 className='title'>{props.data['title']}</h3>
             <div className="link-row">      
-              {getLinks('Part I')}
+              {getLinks('Part II')}
             </div>
           </div>
         </div>   
