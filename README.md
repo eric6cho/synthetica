@@ -1,65 +1,33 @@
-# react-node-template
 
-Description:
-Barebones file structure of a Node.js server and React app project.
+# Synthetica
 
-to start node server:
-npm start
+A visually striking literature collection of ten AI written pieces created by ChatGPT.
 
-to start react server:
-cd client 
-npm start
+## Deployed Application
 
-Notes:
+This application is deployed and hosted on Heroku and can be viewed 
+[here](https://synthetica.herokuapp.com/).
 
-File structure notes:
-Below is a description of any notes and notable difference from a standard react/node project.
+## Available Scripts
 
-react-node-template:
- - client: directory containing React app
-   - public: directory containing public assets
-     - index.html: file containing stylesheet references for google icons and font
-   - src: directory containing code for React components
-     - components: directory containing code for a sample component
-     - scripts: directory containing a utils file
-     - styles: directory containing stylesheets for components and general mixins
-       - mixins: directory containing a mixins file
-         - mixins.scss: file containing scss functions and default styling for the app
-       - comp-sample.scss: file containing scss for the sample component
-       - main.scss: file containing global style and calls default functions from mixins.scss
-     - App.js: file containing the main component of the React app
-     - SetupProxy.js: file defining a local proxy to the Node.js server.
- - server: directory containing the Node.js server
-   - index,js: file that defines the server and the api routes
-     - scripts: directory containing a utils file
- - .env.example: example of .env
- - .gitignore: ignores .env and node_modules directory
- - README.md: project description
- - package.lock.json: created by package.json
- - package.json: contains project info, packages, dependencies, and scripts
+All scripts below are run from the project directory.
 
-Heroku Deployment:
-As of Sept 2022,
-As long as the Heroku App is connected to the GitHub repository, this configuration can deploy heroku with no extra buildpacks.
-Any configs on prod envs will require configuring key/env variables, as seen in the .env.example file.
+### Run the Node.js server
 
-General:
-The template below is created for a project specific readme.
-This is just a general readme to explain the template.
+`npm start`
 
-# project-title
+This will start the Node.js server on port 3001. 
+Note: this backend server for this project is currently empty, and is here for future use.
 
-Description:
+### Run the React client app
 
+`cd client`
 
-Guide:
-To start node server:
-npm start
+`npm start`
 
-To start react server:
-cd client
-npm start
+This will start the React client app on port 3000.
 
-Notes:
-Local server is hosted on http://localhost:8888
-Local react app is hosted on http://localhost:3000
+## Deploying The Project
+
+The deployed project is based on the `main` branch, and a new deployment occurs when updates are pushed onto the `main` branch.
+
